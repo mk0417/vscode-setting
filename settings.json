@@ -1,20 +1,11 @@
 {
-    // ---------------------------------------
-    //               Workbench
-    // ---------------------------------------
     "workbench.panel.defaultLocation": "right",
     "workbench.settings.editor": "json",
     "workbench.colorTheme": "Nord",
     "workbench.statusBar.visible": true,
     "workbench.editor.highlightModifiedTabs": true,
     "workbench.activityBar.visible": false,
-    // "workbench.settings.openDefaultSettings": true,
-    // "workbench.settings.useSplitJSON": true,
 
-
-    // ---------------------------------------
-    //                  Editor
-    // ---------------------------------------
     "editor.fontFamily": "Iosevka SS04",
     "editor.fontSize": 14,
     "editor.fontWeight": "500",
@@ -35,17 +26,9 @@
         "strings": true
     },
 
-
-    // ---------------------------------------
-    //                  Files
-    // ---------------------------------------
     "files.exclude": {".*": true},
     "files.autoSave": "off",
 
-
-    // ---------------------------------------
-    //                Python
-    // ---------------------------------------
     "python.pythonPath": "/Users/ml/anaconda3/bin/python",
     "python.dataScience.jupyterServerURI": "local",
     "python.linting.enabled": false,
@@ -54,272 +37,188 @@
     "python.dataScience.sendSelectionToInteractiveWindow": true,
     "python.dataScience.askForKernelRestart": false,
     "python.dataScience.useNotebookEditor": true,
-    //"[python]": {}
-    //"[jupyter]": {}
 
-
-    // ---------------------------------------
-    //                Window
-    // ---------------------------------------
     "window.titleBarStyle": "custom",
 
-
-    // ---------------------------------------
-    //                 Search
-    // ---------------------------------------
     "search.location": "panel",
 
-
-    // ---------------------------------------
-    //                 Terminal
-    // ---------------------------------------
     "terminal.integrated.fontSize": 14,
     "terminal.integrated.inheritEnv": true,
 
-
-    // ---------------------------------------
-    //                 Latex
-    // ---------------------------------------
     "latex-workshop.view.pdf.viewer": "tab",
 
-
-    // ---------------------------------------
-    //                  Git
-    // ---------------------------------------
     "git.ignoreLegacyWarning": true,
 
-
-    // ---------------------------------------
-    //                  Vim
-    // ---------------------------------------
-
-    // Key remapping
     "vim.insertModeKeyBindings": [
         {
             "before": ["f","d"],
             "after": ["<Esc>"]
         }
     ],
-
-    // Make it like spacemacs
-    // Leader key: <space>
     "vim.leader": "<space>",
-
     "vim.visualModeKeyBindingsNonRecursive": [
         {
             "before": ["f","d"],
             "after": ["<Esc>"]
         },
         {
-            // <space> + <space>
             "before": ["<leader>","<space>"],
             "commands": ["workbench.action.showCommands"]
         },
         {
-            // <space> + c + l
             "before": ["<leader>","c","l"],
             "commands": ["editor.action.commentLine"]
         },
         {
-            // <space> + e + f
             "before": ["<leader>","e","f"],
-            "commands": ["editor.action.formatDocument"],
+            "commands": ["editor.action.formatDocument"]
         }
     ],
-
     "vim.normalModeKeyBindingsNonRecursive": [
         {
-            // <space> + <space>: show commands
             "before": ["<leader>","<space>"],
             "commands": ["workbench.action.showCommands"]
         },
         {
-            // <space> + c + l: comment/uncomment
             "before": ["<leader>","c","l"],
             "commands": ["editor.action.commentLine"]
         },
-
-        // -------------------- buffer --------------------
         {
-            // <space> + <tab>: show buffers in current group
             "before": ["<leader>","<tab>"],
             "commands": ["workbench.action.openNextRecentlyUsedEditorInGroup"]
         },
         {
-            // <space> + b + b: show buffers (global)
             "before": ["<leader>","b","b"],
             "commands": ["workbench.action.showAllEditors"]
         },
         {
-            // <space> + b + d: close buffer
             "before": ["<leader>","b","d"],
             "commands": ["workbench.action.closeActiveEditor"]
         },
         {
-            // <space> + b + n: next buffer
             "before": [ "<leader>","b","n"],
             "commands": ["workbench.action.nextEditor"]
         },
         {
-            // <space> + b + p: previous buffer
             "before": [ "<leader>","b","p"],
             "commands": ["workbench.action.previousEditor"]
         },
         {
-            // <space> + b + r: recent files
             "before": ["<leader>","b","r"],
             "commands": ["workbench.action.openRecent"]
         },
         
-       // -------------------- file --------------------
        {
-            // <space> + f + d: open setting file (vscode dot file)
             "before": ["<leader>","f","d"],
             "commands": ["workbench.action.openGlobalSettings"]
         },
         {
-            // <space> + f + f: open file
             "before": ["<leader>","f","f"],
             "commands": ["workbench.action.files.openFileFolder"]
         },
         {
-            // <space> + f + n: new empty files
             "before": ["<leader>","f","n"],
             "commands": ["workbench.action.files.newUntitledFile"]
         },
         {
-            // <space> + f + p: find in project
             "before": ["<leader>","f","p"],
             "commands": ["workbench.action.quickOpen"]
         },
         {
-            // <space> + f + r: recent files
             "before": ["<leader>","f","r"],
             "commands": ["workbench.action.openRecent"]
         },
         {
-            // <space> + f + s: save file
             "before": ["<leader>","f","s"],
             "commands": ["workbench.action.files.save"]
         },
         {
-            // <space> + f + t: file tree (file explorer)
             "before": ["<leader>","f","t"],
             "commands": ["workbench.view.explorer"]
         },
         {
-            // <space> + f + y: copy file path
-            // <Ctrl-v> to paste
             "before": ["<leader>","f","y"],
             "commands": ["workbench.action.files.copyPathOfActiveFile"]
         },
         
-        // -------------------- window --------------------
         {
-            // <space> + 1
             "before": ["<leader>","1"],
             "commands": ["workbench.action.focusFirstEditorGroup"]
         },
         {
-            // <space> + 2
             "before": ["<leader>","2"],
             "commands": ["workbench.action.focusSecondEditorGroup"]
         },
         {
-            // <space> + 3
             "before": ["<leader>","3"],
             "commands": ["workbench.action.focusThirdEditorGroup"]
         },
         {
-            // <space> + 4
             "before": ["<leader>","4"],
             "commands": ["workbench.action.focusFourthEditorGroup"]
         },
         {
-            // <space> + w + d: close window
             "before": ["<leader>","w","d"],
             "commands": ["workbench.action.closeEditorsInGroup"]
         },
         {
-            // <space> + w + h: split window horizontally
             "before": [ "<leader>","w","h"],
             "commands": ["workbench.action.splitEditorDown"]
         },
         {
-            // <space> + w + v: split window vertically
             "before": ["<leader>","w","v"],
             "commands": ["workbench.action.splitEditorRight"]
         },
 
-        // -------------------- search --------------------
         {
-            // <space> + s + s: search
             "before":  ["<leader>","s","s"],
             "commands": ["workbench.action.findInFiles"]
         },
-
-        // -------------------- jump --------------------
         {
-            // <space> + j + j: jump to character
             "before": ["leader","j","j"],
             "after": ["leader","leader","s"]
         },
         {
-            // <space> + j + l: jump to line
             "before": ["leader","j","l"],
             "after": ["leader","leader","leader","b","d","j","k"]
         },
         {
-            // <space> + j + s: jump to symbol
             "before": ["<leader>","j","s"],
             "commands": ["workbench.action.gotoSymbol"]
         },
         {
-            // <space> + j + w: jump to word
             "before": ["leader","j","w"],
             "after": ["leader","leader","leader","b","d","w"]
         },
-        
-        // -------------------- text --------------------
         {
-            // <space> + e + e: selection expand
             "before": ["<leader>","e","e"],
             "commands": ["editor.action.smartSelect.grow"]
         },
         {
-            // <space> + e + f: format document
             "before": ["<leader>","e","f"],
             "commands": ["editor.action.formatDocument"]
         },
         {
-            // <space> + e + s: selection shrink
             "before": [ "<leader>","e","s"],
             "commands": ["editor.action.smartSelect.shrink"]
         },
-
-        // -------------------- toggle --------------------
         {
-            // <space> + t + k: toggle keybindings
             "before": ["<leader>","t","k"],
             "commands": ["workbench.action.openGlobalKeybindings"]
         },
         {
-            // <space> + t + p: toggle panel
             "before": ["<leader>","t","p"],
             "commands": ["workbench.action.togglePanel"]
         },
         {
-            // <space> + t + s: toggle sidebar
             "before": [ "<leader>","t","s"],
             "commands": ["workbench.action.toggleActivityBarVisibility"]
         },
        {
-           // <space> + t + t: toggle theme
             "before": ["<leader>","t","t"],
             "commands": ["workbench.action.selectTheme"]
         },
         {
-            // <space> + t + z: toggle terminal (zsh)
             "before": ["<leader>","t","z"],
             "commands": ["workbench.action.terminal.toggleTerminal"]
         }
@@ -329,12 +228,6 @@
     "vim.surround": true,
     "vim.sneak": true,
 
-
-    // --------------  Usage statistics to Microsfot  ---------------
-    // Enable crash reports to be sent to Microsoft.
-    // This option requires restart to take effect.
     "telemetry.enableCrashReporter": false,
-    // Enable usage data and errors to be sent to Microsoft.
-    "telemetry.enableTelemetry": false,
-
+    "telemetry.enableTelemetry": false
 }

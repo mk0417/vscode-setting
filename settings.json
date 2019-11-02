@@ -5,6 +5,7 @@
     "workbench.statusBar.visible": true,
     "workbench.editor.highlightModifiedTabs": true,
     "workbench.activityBar.visible": false,
+    "workbench.editor.tabSizing": "shrink",
 
     "editor.fontFamily": "Iosevka SS04",
     "editor.fontSize": 14,
@@ -26,7 +27,6 @@
         "strings": true
     },
 
-    "files.exclude": {".*": true},
     "files.autoSave": "off",
 
     "python.pythonPath": "/Users/ml/anaconda3/bin/python",
@@ -48,6 +48,14 @@
     "latex-workshop.view.pdf.viewer": "tab",
 
     "git.ignoreLegacyWarning": true,
+
+    "macros": {
+        "splitEmpty": [
+          "workbench.action.splitEditor",
+          "workbench.action.files.newUntitledFile",
+          "workbench.action.closeEditorsToTheLeft" 
+        ]
+      },
 
     "vim.insertModeKeyBindings": [
         {
@@ -162,6 +170,10 @@
             "commands": ["workbench.action.closeEditorsInGroup"]
         },
         {
+            "before": ["<leader>","w","e"],
+            "commands": ["macros.splitEmpty"]
+        },
+        {
             "before": [ "<leader>","w","h"],
             "commands": ["workbench.action.splitEditorDown"]
         },
@@ -169,10 +181,13 @@
             "before": ["<leader>","w","v"],
             "commands": ["workbench.action.splitEditorRight"]
         },
-
         {
             "before":  ["<leader>","s","s"],
             "commands": ["workbench.action.findInFiles"]
+        },
+        {
+            "before": ["leader","j","f"],
+            "after": ["leader","leader","f"]
         },
         {
             "before": ["leader","j","j"],
@@ -211,7 +226,7 @@
             "commands": ["workbench.action.togglePanel"]
         },
         {
-            "before": [ "<leader>","t","s"],
+            "before": [ "<leader>","t","a"],
             "commands": ["workbench.action.toggleActivityBarVisibility"]
         },
        {
@@ -224,6 +239,7 @@
         }
     ],
     "vim.easymotion": true,
+    "vim.easymotionMarkerHeight": 18, 
     "vim.visualstar": true,
     "vim.surround": true,
     "vim.sneak": true,

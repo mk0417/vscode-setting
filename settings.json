@@ -100,7 +100,6 @@
             "commands": ["editor.action.commentLine"]
         },
         {
-            // <space> + n + c: clear all notifications
             "before": ["<leader>","n","c"],
             "commands": ["notifications.clearAll"]
         },
@@ -117,12 +116,10 @@
             "commands": ["workbench.action.closeActiveEditor"]
         },
         {
-            // <space> + b + h: move buffer to light
             "before": ["<leader>","b","h"],
             "commands": ["workbench.action.moveEditorToPreviousGroup"]
         },
         {
-            // <space> + b + l: move buffer to right
             "before": ["<leader>","b","l"],
             "commands": ["workbench.action.moveEditorToNextGroup"]
         },
@@ -138,7 +135,6 @@
             "before": ["<leader>","b","r"],
             "commands": ["workbench.action.openRecent"]
         },
-        
        {
             "before": ["<leader>","f","d"],
             "commands": ["workbench.action.openGlobalSettings"]

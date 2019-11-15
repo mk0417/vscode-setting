@@ -9,6 +9,7 @@
     "workbench.editor.tabSizing": "shrink",
     "workbench.editor.showTabs": false,
     "workbench.editor.labelFormat": "short",
+    "workbench.settings.enableNaturalLanguageSearch": false,
 
     "editor.fontFamily": "Iosevka SS04",
     "editor.fontSize": 14,
@@ -26,6 +27,8 @@
     "editor.rulers": [80],
     "editor.tabCompletion": "on",
     "editor.cursorBlinking": "smooth",
+    "editor.smoothScrolling": true,
+    "editor.cursorSmoothCaretAnimation": true,
     "editor.quickSuggestions": {
         "other": true,
         "comments": false,
@@ -33,6 +36,7 @@
     },
 
     "files.autoSave": "off",
+    "files.trimTrailingWhitespace": true,
 
     "python.pythonPath": "/Users/ml/anaconda3/bin/python",
     "python.dataScience.jupyterServerURI": "local",
@@ -61,7 +65,7 @@
         "splitEmpty": [
           "workbench.action.splitEditor",
           "workbench.action.files.newUntitledFile",
-          "workbench.action.closeEditorsToTheLeft" 
+          "workbench.action.closeEditorsToTheLeft"
         ]
       },
 
@@ -269,7 +273,7 @@
         }
     ],
     "vim.easymotion": true,
-    "vim.easymotionMarkerHeight": 18, 
+    "vim.easymotionMarkerHeight": 18,
     "vim.visualstar": true,
     "vim.surround": true,
     "vim.sneak": true,

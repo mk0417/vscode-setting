@@ -6,6 +6,8 @@
     "workbench.editor.highlightModifiedTabs": true,
     "workbench.activityBar.visible": false,
     "workbench.editor.tabSizing": "shrink",
+    "workbench.editor.showTabs": false,
+    "workbench.editor.labelFormat": "short",
 
     "editor.fontFamily": "Iosevka SS04",
     "editor.fontSize": 14,
@@ -21,6 +23,8 @@
     "editor.wordWrap": "wordWrapColumn",
     "editor.lineHeight": 21,
     "editor.rulers": [80],
+    "editor.tabCompletion": "on",
+    "editor.cursorBlinking": "smooth",
     "editor.quickSuggestions": {
         "other": true,
         "comments": false,
@@ -39,8 +43,11 @@
     "python.dataScience.useNotebookEditor": true,
 
     "window.titleBarStyle": "custom",
+    "window.zoomLevel": 0,
 
     "search.location": "panel",
+    "search.showLineNumbers": true,
+    "search.followSymlinks": false,
 
     "terminal.integrated.fontSize": 14,
     "terminal.integrated.inheritEnv": true,
@@ -125,6 +132,10 @@
             "commands": ["workbench.action.files.openFileFolder"]
         },
         {
+            "before": ["<leader>","f","m"],
+            "commands": ["fileutils.moveFile"]
+        },
+        {
             "before": ["<leader>","f","n"],
             "commands": ["workbench.action.files.newUntitledFile"]
         },
@@ -134,7 +145,7 @@
         },
         {
             "before": ["<leader>","f","r"],
-            "commands": ["workbench.action.openRecent"]
+            "commands": ["fileutils.renameFile"]
         },
         {
             "before": ["<leader>","f","s"],
@@ -176,6 +187,10 @@
         {
             "before": [ "<leader>","w","h"],
             "commands": ["workbench.action.splitEditorDown"]
+        },
+        {
+            "before": [ "<leader>","w","j"],
+            "commands": ["workbench.action.joinTwoGroups"]
         },
         {
             "before": ["<leader>","w","v"],
@@ -243,6 +258,7 @@
     "vim.visualstar": true,
     "vim.surround": true,
     "vim.sneak": true,
+    "vim.incsearch": true,
 
     "telemetry.enableCrashReporter": false,
     "telemetry.enableTelemetry": false

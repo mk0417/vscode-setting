@@ -2,6 +2,7 @@
     "workbench.panel.defaultLocation": "right",
     "workbench.settings.editor": "json",
     "workbench.colorTheme": "Nord",
+    "workbench.iconTheme": "vscode-icons",
     "workbench.statusBar.visible": true,
     "workbench.editor.highlightModifiedTabs": true,
     "workbench.activityBar.visible": false,
@@ -99,6 +100,11 @@
             "commands": ["editor.action.commentLine"]
         },
         {
+            // <space> + n + c: clear all notifications
+            "before": ["<leader>","n","c"],
+            "commands": ["notifications.clearAll"]
+        },
+        {
             "before": ["<leader>","<tab>"],
             "commands": ["workbench.action.openNextRecentlyUsedEditorInGroup"]
         },
@@ -109,6 +115,16 @@
         {
             "before": ["<leader>","b","d"],
             "commands": ["workbench.action.closeActiveEditor"]
+        },
+        {
+            // <space> + b + h: move buffer to light
+            "before": ["<leader>","b","h"],
+            "commands": ["workbench.action.moveEditorToPreviousGroup"]
+        },
+        {
+            // <space> + b + l: move buffer to right
+            "before": ["<leader>","b","l"],
+            "commands": ["workbench.action.moveEditorToNextGroup"]
         },
         {
             "before": [ "<leader>","b","n"],
@@ -159,7 +175,10 @@
             "before": ["<leader>","f","y"],
             "commands": ["workbench.action.files.copyPathOfActiveFile"]
         },
-        
+        {
+            "before": ["<leader>","g","v"],
+            "commands": ["git-graph.view"]
+        },
         {
             "before": ["<leader>","1"],
             "commands": ["workbench.action.focusFirstEditorGroup"]

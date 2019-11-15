@@ -14,7 +14,7 @@
     "editor.fontFamily": "Iosevka SS04",
     "editor.fontSize": 14,
     "editor.fontWeight": "500",
-    "editor.lineNumbers": "relative",
+    "editor.lineNumbers": "on",
     "editor.minimap.enabled": false,
     "editor.suggestSelection": "first",
     "editor.renderControlCharacters": false,
@@ -104,7 +104,7 @@
             "commands": ["editor.action.commentLine"]
         },
         {
-            "before": ["<leader>","n","c"],
+            "before": ["<leader>","n","n"],
             "commands": ["notifications.clearAll"]
         },
         {
@@ -176,8 +176,8 @@
             "commands": ["workbench.action.files.copyPathOfActiveFile"]
         },
         {
-            "before": ["<leader>","g","v"],
-            "commands": ["git-graph.view"]
+            "before": ["<leader>","g","f"],
+            "commands": ["gitlens.showQuickFileHistory"]
         },
         {
             "before": ["<leader>","1"],

@@ -60,6 +60,9 @@
     "latex-workshop.view.pdf.viewer": "tab",
 
     "git.ignoreLegacyWarning": true,
+    "gitlens.hovers.currentLine.over": "line",
+    "gitlens.currentLine.enabled": false,
+    "gitlens.codeLens.enabled": false,
 
     "macros": {
         "splitEmpty": [

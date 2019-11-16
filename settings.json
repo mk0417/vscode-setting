@@ -70,6 +70,16 @@
           "workbench.action.splitEditor",
           "workbench.action.files.newUntitledFile",
           "workbench.action.closeEditorsToTheLeft"
+        ],
+        "selectionFind": [
+            "actions.find",
+            "toggleFindRegex",
+            "toggleFindInSelection"
+        ],
+        "selectionReplace": [
+            "editor.action.startFindReplaceAction",
+            "toggleFindRegex",
+            "toggleFindInSelection"
         ]
       },
 
@@ -96,8 +106,17 @@
         {
             "before": ["<leader>","e","f"],
             "commands": ["editor.action.formatDocument"]
+        },
+        {
+            "before":  ["<leader>","s","i"],
+            "commands": ["macros.selectionFind"]
+        },
+        {
+            "before":  ["<leader>","s","r"],
+            "commands": ["macros.selectionReplace"]
         }
     ],
+
     "vim.normalModeKeyBindingsNonRecursive": [
         {
             "before": ["<leader>","<space>"],
@@ -220,8 +239,18 @@
             "commands": ["workbench.action.splitEditorRight"]
         },
         {
-            "before":  ["<leader>","s","s"],
+            "before":  ["<leader>","s","g"],
             "commands": ["workbench.action.findInFiles"]
+        },
+        {
+            "before": ["<leader>","s","s"],
+            "commands": ["actions.find"],
+            "after": ["toggleFindRegex"]
+        },
+        {
+            "before": ["<leader>","s","h"],
+            "commands": ["editor.action.startFindReplaceAction"],
+            "after": ["toggleFindRegex"]
         },
         {
             "before": ["leader","j","f"],

@@ -285,6 +285,18 @@
             "commands": ["editor.action.smartSelect.shrink"]
         },
         {
+            "before": [ "<leader>","t","a"],
+            "commands": ["workbench.action.toggleActivityBarVisibility"]
+        },
+        {
+            "before": ["<leader>","t","b"],
+            "commands": ["workbench.action.toggleSidebarVisibility"]
+        },
+        {
+            "before": ["<leader>","t","e"],
+            "commands": ["workbench.view.explorer"]
+        },
+        {
             "before": ["<leader>","t","k"],
             "commands": ["workbench.action.openGlobalKeybindings"]
         },
@@ -292,13 +304,13 @@
             "before": ["<leader>","t","p"],
             "commands": ["workbench.action.togglePanel"]
         },
-        {
-            "before": [ "<leader>","t","a"],
-            "commands": ["workbench.action.toggleActivityBarVisibility"]
-        },
        {
             "before": ["<leader>","t","t"],
             "commands": ["workbench.action.selectTheme"]
+        },
+        {
+            "before": ["<leader>","t","x"],
+            "commands": ["workbench.view.extensions"]
         },
         {
             "before": ["<leader>","t","z"],

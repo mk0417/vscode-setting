@@ -73,12 +73,10 @@
         ],
         "selectionFind": [
             "actions.find",
-            "toggleFindRegex",
             "toggleFindInSelection"
         ],
         "selectionReplace": [
             "editor.action.startFindReplaceAction",
-            "toggleFindRegex",
             "toggleFindInSelection"
         ]
       },
@@ -109,11 +107,13 @@
         },
         {
             "before":  ["<leader>","s","i"],
-            "commands": ["macros.selectionFind"]
+            "commands": ["macros.selectionFind"],
+            "after": ["toggleFindRegex"]
         },
         {
             "before":  ["<leader>","s","r"],
-            "commands": ["macros.selectionReplace"]
+            "commands": ["macros.selectionReplace"],
+            "after": ["toggleFindRegex"]
         }
     ],
 

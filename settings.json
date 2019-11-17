@@ -7,8 +7,7 @@
     "workbench.editor.highlightModifiedTabs": true,
     "workbench.activityBar.visible": false,
     "workbench.editor.tabSizing": "shrink",
-    "workbench.editor.showTabs": false,
-    "workbench.editor.labelFormat": "short",
+    "workbench.editor.showTabs": true,
     "workbench.settings.enableNaturalLanguageSearch": false,
 
     "editor.fontFamily": "Iosevka SS04",

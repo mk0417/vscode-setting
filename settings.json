@@ -45,6 +45,7 @@
     "python.dataScience.sendSelectionToInteractiveWindow": true,
     "python.dataScience.askForKernelRestart": false,
     "python.dataScience.useNotebookEditor": true,
+    "python.experiments.enabled": false,
 
     "window.titleBarStyle": "custom",
     "window.zoomLevel": 0,
@@ -161,7 +162,7 @@
             "before": ["<leader>","b","r"],
             "commands": ["workbench.action.openRecent"]
         },
-       {
+        {
             "before": ["<leader>","f","d"],
             "commands": ["workbench.action.openGlobalSettings"]
         },
@@ -288,12 +289,12 @@
             "commands": ["workbench.action.toggleActivityBarVisibility"]
         },
         {
-            "before": ["<leader>","t","b"],
-            "commands": ["workbench.action.toggleSidebarVisibility"]
-        },
-        {
             "before": ["<leader>","t","e"],
             "commands": ["workbench.view.explorer"]
+        },
+        {
+            "before": ["<leader>","t","g"],
+            "commands": ["workbench.view.scm"]
         },
         {
             "before": ["<leader>","t","k"],
@@ -303,7 +304,11 @@
             "before": ["<leader>","t","p"],
             "commands": ["workbench.action.togglePanel"]
         },
-       {
+        {
+            "before": ["<leader>","t","s"],
+            "commands": ["workbench.action.toggleSidebarVisibility"]
+        },
+        {
             "before": ["<leader>","t","t"],
             "commands": ["workbench.action.selectTheme"]
         },

@@ -9,6 +9,8 @@
     "workbench.editor.tabSizing": "shrink",
     "workbench.editor.showTabs": true,
     "workbench.settings.enableNaturalLanguageSearch": false,
+    "workbench.editor.enablePreview": false,
+    "workbench.editor.enablePreviewFromQuickOpen": false,
 
     "editor.fontFamily": "Iosevka SS04",
     "editor.fontSize": 14,

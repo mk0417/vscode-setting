@@ -329,6 +329,8 @@
     "vim.surround": true,
     "vim.sneak": true,
     "vim.incsearch": true,
+    "vim.enableNeovim": true,
+    "vim.neovimPath": "/usr/local/bin/nvim",
 
     "telemetry.enableCrashReporter": false,
     "telemetry.enableTelemetry": false

@@ -22,7 +22,7 @@
     "editor.highlightActiveIndentGuide": true,
     "editor.occurrencesHighlight": false,
     "editor.renderLineHighlight": "all",
-    "editor.autoIndent": true,
+    "editor.autoIndent": "full",
     "editor.wordWrap": "wordWrapColumn",
     "editor.lineHeight": 21,
     "editor.rulers": [80],

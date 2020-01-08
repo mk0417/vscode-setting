@@ -331,6 +331,13 @@
     "vim.incsearch": true,
     "vim.enableNeovim": true,
     "vim.neovimPath": "/usr/local/bin/nvim",
+    "vim.useCtrlKeys": false,
+    "vim.handleKeys": {
+        "<C-d>": true,
+        "<C-f>": true,
+        "<C-u>": true,
+        "<C-b>": true
+    },
 
     "telemetry.enableCrashReporter": false,
     "telemetry.enableTelemetry": false

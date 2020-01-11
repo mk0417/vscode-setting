@@ -322,6 +322,14 @@
             "before": ["<leader>","t","z"],
             "commands": ["workbench.action.terminal.toggleTerminal"]
         }
+        {
+            "before": ["<leader>","q","w"],
+            "after": ["y","s","i","w"]
+        },
+        {
+            "before": ["<leader>","q","q"],
+            "after": ["y","s","i","W"]
+        }
     ],
     "vim.easymotion": true,
     "vim.easymotionMarkerHeight": 18,

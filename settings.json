@@ -48,7 +48,6 @@
     "python.dataScience.askForKernelRestart": false,
     "python.dataScience.useNotebookEditor": true,
     "python.experiments.enabled": false,
-    "python.dataScience.enabled": false,
 
     "window.titleBarStyle": "custom",
     "window.zoomLevel": 0,

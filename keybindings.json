@@ -1,0 +1,10 @@
+[
+    {
+        "key": "ctrl+i",
+        "command": "workbench.action.openNextRecentlyUsedEditorInGroup"
+    },
+    {
+       "key": "ctrl+w",
+        "command": "workbench.action.closeActiveEditor"
+    }
+]

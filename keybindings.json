@@ -6,5 +6,13 @@
     {
        "key": "ctrl+w",
         "command": "workbench.action.closeActiveEditor"
+    },
+    {
+        "key": "ctrl+c",
+        "command": "workbench.action.toggleSidebarVisibility"
+    },
+    {
+        "key": "ctrl+0",
+        "command": "workbench.action.focusFirstEditorGroup"
     }
 ]

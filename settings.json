@@ -329,6 +329,10 @@
         {
             "before": ["<leader>","q","q"],
             "after": ["y","s","i","W"]
+        },
+        {
+            "before": ["<leader>","a","s"],
+            "commands": ["workbench.action.toggleScreencastMode"]
         }
     ],
     "vim.easymotion": true,

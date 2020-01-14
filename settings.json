@@ -344,6 +344,7 @@
         "<C-d>": true,
         "<C-f>": true,
         "<C-u>": true,
+        "<C-v>": true,
         "<C-b>": true
     },
 

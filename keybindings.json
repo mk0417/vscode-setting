@@ -1,6 +1,6 @@
 [
     {
-        "key": "ctrl+i",
+        "key": "ctrl+o",
         "command": "workbench.action.openNextRecentlyUsedEditorInGroup"
     },
     {
@@ -12,7 +12,12 @@
         "command": "workbench.action.toggleSidebarVisibility"
     },
     {
-        "key": "ctrl+0",
+        "key": "ctrl+i",
         "command": "workbench.action.focusFirstEditorGroup"
+    },
+    {
+        "key": "ctrl+space",
+        "command": "workbench.action.showCommands"
     }
 ]
+

@@ -121,6 +121,10 @@
 
     "vim.normalModeKeyBindingsNonRecursive": [
         {
+            "before": ["g","i"],
+            "after": ["g","i","<Esc>"]
+        },
+        {
             "before": ["<leader>","u","e"],
             "after": ["v","$","h"]
         },

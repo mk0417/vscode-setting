@@ -121,6 +121,14 @@
 
     "vim.normalModeKeyBindingsNonRecursive": [
         {
+            "before": ["<leader>","u","e"],
+            "after": ["v","$","h"]
+        },
+        {
+            "before": ["<leader>","o"],
+            "after": ["o","<Esc>","k"]
+        },
+        {
             "before": ["<leader>","<space>"],
             "commands": ["workbench.action.showCommands"]
         },
@@ -201,8 +209,16 @@
             "commands": ["workbench.action.files.copyPathOfActiveFile"]
         },
         {
-            "before": ["<leader>","g","f"],
+            "before": ["<leader>","g","h"],
             "commands": ["gitlens.showQuickFileHistory"]
+        },
+        {
+            "before": ["<leader>","g","f"],
+            "commands": ["gitlens.toggleFileBlame"]
+        },
+        {
+            "before": ["<leader>","g","l"],
+            "commands": ["gitlens.toggleLineBlame"]
         },
         {
             "before": ["<leader>","1"],
@@ -321,7 +337,7 @@
         {
             "before": ["<leader>","t","z"],
             "commands": ["workbench.action.terminal.toggleTerminal"]
-        }
+        },
         {
             "before": ["<leader>","q","w"],
             "after": ["y","s","i","w"]

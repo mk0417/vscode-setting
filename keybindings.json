@@ -4,16 +4,20 @@
         "command": "workbench.action.openNextRecentlyUsedEditorInGroup"
     },
     {
-       "key": "ctrl+w",
+       "key": "ctrl+c",
         "command": "workbench.action.closeActiveEditor"
     },
     {
-        "key": "ctrl+c",
+        "key": "ctrl+t",
         "command": "workbench.action.toggleSidebarVisibility"
     },
     {
         "key": "ctrl+i",
         "command": "workbench.action.focusFirstEditorGroup"
+    },
+    {
+        "key": "ctrl+j",
+        "command": "workbench.action.togglePanel"
     },
     {
         "key": "ctrl+space",

@@ -145,7 +145,7 @@
             "commands": ["notifications.clearAll"]
         },
         {
-            "before": ["<leader>","<tab>"],
+            "before": ["<leader>","b","t"],
             "commands": ["workbench.action.openNextRecentlyUsedEditorInGroup"]
         },
         {
@@ -175,6 +175,10 @@
         {
             "before": ["<leader>","b","r"],
             "commands": ["workbench.action.openRecent"]
+        },
+        {
+            "before": ["<leader>","f","c"],
+            "commands": ["fileutils.duplicateFile"]
         },
         {
             "before": ["<leader>","f","d"],

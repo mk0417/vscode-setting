@@ -87,6 +87,38 @@
         {
             "before": ["f","d"],
             "after": ["<Esc>"]
+        },
+        {
+            "before": ["p","p"],
+            "after": ["("]
+        },
+        {
+            "before": ["s","s"],
+            "after": ["["]
+        },
+        {
+            "before": ["c","c"],
+            "after": ["{"]
+        },
+        {
+            "before": ["e","e"],
+            "after": ["="]
+        },
+        {
+            "before": ["j","j"],
+            "after": ["+"]
+        },
+        {
+            "before": ["m","m"],
+            "after": ["-"]
+        },
+        {
+            "before": ["t","t"],
+            "after": ["*"]
+        },
+        {
+            "before": ["h","h"],
+            "after": ["#"]
         }
     ],
     "vim.leader": "<space>",

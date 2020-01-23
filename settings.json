@@ -117,6 +117,10 @@
             "after": ["*"]
         },
         {
+            "before": ["l","l"],
+            "after": ["_"]
+        },
+        {
             "before": ["h","h"],
             "after": ["#"]
         }
@@ -152,6 +156,10 @@
     ],
 
     "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            "before": ["<leader>","d"],
+            "after": ["c","c","<Esc>"]
+        },
         {
             "before": ["g","i"],
             "after": ["g","i","<Esc>"]

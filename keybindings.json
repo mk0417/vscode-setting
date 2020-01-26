@@ -20,6 +20,10 @@
         "command": "workbench.action.togglePanel"
     },
     {
+        "key": "ctrl+;",
+        "command": "editor.action.replaceAll"
+    },
+    {
         "key": "ctrl+space",
         "command": "workbench.action.showCommands"
     }

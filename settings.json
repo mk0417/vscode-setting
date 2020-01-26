@@ -117,8 +117,20 @@
             "after": ["*"]
         },
         {
-            "before": ["l","l"],
+            "before": ["u","u"],
             "after": ["_"]
+        },
+        {
+            "before": ["g","g"],
+            "after": [">"]
+        },
+        {
+            "before": ["l","l"],
+            "after": ["<"]
+        },
+        {
+            "before": ["a","a"],
+            "after": ["&"]
         },
         {
             "before": ["h","h"],
@@ -152,6 +164,10 @@
             "before":  ["<leader>","s","r"],
             "commands": ["macros.selectionReplace"],
             "after": ["toggleFindRegex"]
+        },
+        {
+            "before": ["<leader>","r"],
+            "commands": ["python.datascience.execSelectionInteractive"]
         }
     ],
 
@@ -167,6 +183,10 @@
         {
             "before": ["<leader>","u","e"],
             "after": ["v","$","h"]
+        },
+        {
+            "before": ["<leader>","l","e"],
+            "after": ["^","v","$","h"]
         },
         {
             "before": ["<leader>","o"],
@@ -367,8 +387,12 @@
             "commands": ["workbench.action.openGlobalKeybindings"]
         },
         {
-            "before": ["<leader>","t","p"],
-            "commands": ["workbench.action.togglePanel"]
+            "before": ["<leader>","t","f"],
+            "commands": ["workbench.view.search"]
+        },
+        {
+            "before": ["<leader>","t","m"],
+            "commands": ["workbench.actions.view.problems"]
         },
         {
             "before": ["<leader>","t","s"],
@@ -393,6 +417,10 @@
         {
             "before": ["<leader>","q","q"],
             "after": ["y","s","i","W"]
+        },
+        {
+            "before": ["<leader>","r"],
+            "commands": ["python.datascience.execSelectionInteractive"]
         },
         {
             "before": ["<leader>","a","s"],

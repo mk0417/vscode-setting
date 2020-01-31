@@ -30,6 +30,7 @@
     "editor.cursorBlinking": "smooth",
     "editor.smoothScrolling": true,
     "editor.cursorSmoothCaretAnimation": true,
+    "editor.glyphMargin": false,
     "editor.quickSuggestions": {
         "other": true,
         "comments": false,

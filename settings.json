@@ -136,8 +136,21 @@
         {
             "before": ["h","h"],
             "after": ["#"]
+        },
+        {
+            "before": ["e","m"],
+            "after": ["!"]
+        },
+        {
+            "before": ["p","t"],
+            "after": ["%"]
+        },
+        {
+            "before": ["a","t"],
+            "after": ["@"]
         }
     ],
+
     "vim.leader": "<space>",
     "vim.visualModeKeyBindingsNonRecursive": [
         {
@@ -173,6 +186,10 @@
     ],
 
     "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            "before": ["<leader>","c"],
+            "commands": ["python.datascience.runcurrentcelladvance"]
+        },
         {
             "before": ["<leader>","d"],
             "after": ["c","c","<Esc>"]

@@ -146,7 +146,7 @@
             "after": ["%"]
         },
         {
-            "before": ["a","t"],
+            "before": ["d","d"],
             "after": ["@"]
         }
     ],
@@ -193,6 +193,10 @@
         {
             "before": ["<leader>","d"],
             "after": ["c","c","<Esc>"]
+        },
+        {
+            "before": ["<leader>","v"],
+            "commands": ["editor.action.clipboardPasteAction"]
         },
         {
             "before": ["g","i"],

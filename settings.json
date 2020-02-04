@@ -11,6 +11,10 @@
     "workbench.settings.enableNaturalLanguageSearch": false,
     "workbench.editor.enablePreview": false,
     "workbench.editor.enablePreviewFromQuickOpen": false,
+    "workbench.colorCustomizations": {
+        "editor.lineHighlightBackground": "#28424E",
+        "editorCursor.foreground": "#CF5A65"
+      },
 
     "editor.fontFamily": "Iosevka SS04",
     "editor.fontSize": 14,

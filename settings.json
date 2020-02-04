@@ -148,6 +148,10 @@
         {
             "before": ["d","d"],
             "after": ["@"]
+        },
+        {
+            "before": ["n","n"],
+            "after": ["~"]
         }
     ],
 
@@ -156,6 +160,14 @@
         {
             "before": ["f","d"],
             "after": ["<Esc>"]
+        },
+        {
+            "before": ["<leader>","i"],
+            "after": [">"]
+        },
+        {
+            "before": ["<leader>","u"],
+            "after": ["<"]
         },
         {
             "before": ["<leader>","<space>"],

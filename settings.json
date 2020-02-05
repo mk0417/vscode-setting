@@ -13,7 +13,10 @@
     "workbench.editor.enablePreviewFromQuickOpen": false,
     "workbench.colorCustomizations": {
         "editor.lineHighlightBackground": "#28424E",
-        "editorCursor.foreground": "#CF5A65"
+        "editorCursor.foreground": "#CF5A65",
+        "editor.rangeHighlightBackground": "#28424E",
+        "editor.findMatchBackground": "#91ff00",
+        "editor.findRangeHighlightBackground": "#556063"
       },
 
     "editor.fontFamily": "Iosevka SS04",

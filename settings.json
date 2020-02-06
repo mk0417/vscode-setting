@@ -1,7 +1,7 @@
 {
     "workbench.panel.defaultLocation": "right",
     "workbench.settings.editor": "json",
-    "workbench.colorTheme": "Nord",
+    "workbench.colorTheme": "One Dark Pro",
     "workbench.iconTheme": "vscode-icons",
     "workbench.statusBar.visible": true,
     "workbench.editor.highlightModifiedTabs": true,
@@ -16,7 +16,13 @@
         "editorCursor.foreground": "#CF5A65",
         "editor.rangeHighlightBackground": "#28424E",
         "editor.findMatchBackground": "#91ff00",
-        "editor.findRangeHighlightBackground": "#556063"
+        "editor.findMatchHighlightBackground": "#91ff00",
+        "editor.findRangeHighlightBackground": "#556063",
+        "editorSuggestWidget.background": "#FFF2AB",
+        "editorSuggestWidget.foreground":"#555555",
+        "editorSuggestWidget.selectedBackground": "#d0e3ec",
+        "editorSuggestWidget.highlightForeground": "#f87b06",
+        "editorHoverWidget.background": "#0d3d56"
       },
 
     "editor.fontFamily": "Iosevka SS04",

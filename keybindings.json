@@ -1,7 +1,7 @@
 [
     {
         "key": "ctrl+o",
-        "command": "workbench.action.openNextRecentlyUsedEditorInGroup"
+        "command": "workbench.action.quickOpenPreviousRecentlyUsedEditorInGroup"
     },
     {
        "key": "ctrl+c",

@@ -66,12 +66,15 @@
     "window.titleBarStyle": "custom",
     "window.zoomLevel": 0,
 
-    "search.location": "panel",
     "search.showLineNumbers": true,
     "search.followSymlinks": false,
 
-    "terminal.integrated.fontSize": 14,
     "terminal.integrated.inheritEnv": true,
+    "terminal.integrated.cursorBlinking": true,
+    "terminal.integrated.fontWeightBold": "normal",
+    "terminal.integrated.fontFamily": "Menlo",
+    "terminal.integrated.fontSize": 12,
+
 
     "latex-workshop.view.pdf.viewer": "tab",
 
@@ -422,6 +425,14 @@
             "commands": ["workbench.action.toggleActivityBarVisibility"]
         },
         {
+            "before": ["<leader>","t","b"],
+            "commands": ["workbench.action.positionPanelBottom"]
+        },
+        {
+            "before": ["<leader>","t","r"],
+            "commands": ["workbench.action.positionPanelRight"]
+        },
+        {
             "before": ["<leader>","t","e"],
             "commands": ["workbench.view.explorer"]
         },
@@ -454,10 +465,6 @@
             "commands": ["workbench.view.extensions"]
         },
         {
-            "before": ["<leader>","t","z"],
-            "commands": ["workbench.action.terminal.toggleTerminal"]
-        },
-        {
             "before": ["<leader>","q","w"],
             "after": ["y","s","i","w"]
         },
@@ -468,6 +475,10 @@
         {
             "before": ["<leader>","r"],
             "commands": ["python.datascience.execSelectionInteractive"]
+        },
+        {
+            "before": ["<leader>","a","t"],
+            "commands": ["workbench.action.terminal.toggleTerminal"]
         },
         {
             "before": ["<leader>","a","s"],

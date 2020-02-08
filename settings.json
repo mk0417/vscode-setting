@@ -16,10 +16,11 @@
         "editorCursor.foreground": "#CF5A65",
         "editor.findMatchBackground": "#fa380888",
         "editor.findMatchHighlightBackground": "#fa380888",
+        "editor.findRangeHighlightBackground": "#f0f3f23d",
         "editor.rangeHighlightBackground": "#0c89f059",
         "editorSuggestWidget.background": "#325270",
         "editorSuggestWidget.selectedBackground": "#f03c0f52",
-        "editorHoverWidget.background": "#325270"
+        "editorHoverWidget.background": "#325270",
       },
 
     "editor.fontFamily": "Iosevka SS04",

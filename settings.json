@@ -21,10 +21,14 @@
         "editorSuggestWidget.background": "#325270",
         "editorSuggestWidget.selectedBackground": "#f03c0f52",
         "editorHoverWidget.background": "#325270",
+        "editor.selectionBackground": "#b6bebe46",
+        "editorGutter.modifiedBackground": "#2686c5",
+        "editorGutter.addedBackground": "#1fa56d",
+        "editorGutter.deletedBackground": "#c53e26"
       },
 
-    "editor.fontFamily": "Iosevka SS04",
-    "editor.fontSize": 14,
+    "editor.fontFamily": "Menlo",
+    "editor.fontSize": 12,
     "editor.fontWeight": "500",
     "editor.lineNumbers": "on",
     "editor.minimap.enabled": false,
@@ -222,11 +226,11 @@
         },
         {
             "before": ["<leader>","i"],
-            "after": [">","h"]
+            "after": [">","l"]
         },
         {
             "before": ["<leader>","n"],
-            "after": ["<","h"]
+            "after": ["<","l"]
         },
         {
             "before": ["<leader>","v"],

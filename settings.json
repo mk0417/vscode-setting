@@ -108,43 +108,55 @@
             "after": ["<Esc>"]
         },
         {
-            "before": ["p","p"],
+            "before": ["k","k"],
             "after": ["("]
         },
         {
-            "before": ["s","s"],
+            "before": ["g","k"],
+            "after": [")"]
+        },
+        {
+            "before": ["f","f"],
             "after": ["["]
         },
         {
-            "before": ["c","c"],
+            "before": ["g","f"],
+            "after": ["]"]
+        },
+        {
+            "before": ["h","h"],
             "after": ["{"]
         },
         {
-            "before": ["e","e"],
+            "before": ["g","h"],
+            "after": ["}"]
+        },
+        {
+            "before": ["d","h"],
             "after": ["="]
         },
         {
-            "before": ["j","j"],
+            "before": ["j","s"],
             "after": ["+"]
         },
         {
-            "before": ["m","m"],
+            "before": ["j","d"],
             "after": ["-"]
         },
         {
-            "before": ["t","t"],
+            "before": ["c","h"],
             "after": ["*"]
         },
         {
-            "before": ["u","u"],
+            "before": ["x","h"],
             "after": ["_"]
         },
         {
-            "before": ["g","g"],
+            "before": ["g","j"],
             "after": [">"]
         },
         {
-            "before": ["l","l"],
+            "before": ["j","j"],
             "after": ["<"]
         },
         {
@@ -152,15 +164,15 @@
             "after": ["&"]
         },
         {
-            "before": ["h","h"],
+            "before": ["j","h"],
             "after": ["#"]
         },
         {
-            "before": ["e","m"],
+            "before": ["t","h"],
             "after": ["!"]
         },
         {
-            "before": ["p","t"],
+            "before": ["b","f"],
             "after": ["%"]
         },
         {
@@ -168,7 +180,11 @@
             "after": ["@"]
         },
         {
-            "before": ["n","n"],
+            "before": ["s","g"],
+            "after": ["|"]
+        },
+        {
+            "before": ["b","l"],
             "after": ["~"]
         }
     ],

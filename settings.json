@@ -431,6 +431,14 @@
             "commands": ["editor.action.smartSelect.shrink"]
         },
         {
+            "before": ["<leader>","e","l"],
+            "after": ["v","i","w","u"]
+        },
+        {
+            "before": ["<leader>","e","u"],
+            "after": ["v","i","w","U"]
+        },
+        {
             "before": [ "<leader>","t","a"],
             "commands": ["workbench.action.toggleActivityBarVisibility"]
         },

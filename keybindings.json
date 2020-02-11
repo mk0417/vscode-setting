@@ -12,7 +12,7 @@
         "command": "workbench.action.toggleSidebarVisibility"
     },
     {
-        "key": "ctrl+i",
+        "key": "ctrl+r",
         "command": "workbench.action.focusFirstEditorGroup"
     },
     {
@@ -22,6 +22,10 @@
     {
         "key": "ctrl+;",
         "command": "editor.action.replaceAll"
+    },
+    {
+        "key": "ctrl+i",
+        "command": "python.datascience.execSelectionInteractive"
     },
     {
         "key": "ctrl+space",

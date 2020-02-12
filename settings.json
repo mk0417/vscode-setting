@@ -64,6 +64,9 @@
     "python.dataScience.askForKernelRestart": false,
     "python.dataScience.useNotebookEditor": true,
     "python.experiments.enabled": false,
+    "python.dataScience.enabled": true,
+    "python.dataScience.allowLiveShare": false,
+    "python.languageServer": "Microsoft",
 
     "window.titleBarStyle": "custom",
     "window.zoomLevel": 0,

@@ -151,7 +151,7 @@
             "after": ["*"]
         },
         {
-            "before": ["x","h"],
+            "before": ["d","g"],
             "after": ["_"]
         },
         {
@@ -235,6 +235,10 @@
     ],
 
     "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            "before": ["m","m"],
+            "after": ["*"]
+        },
         {
             "before": ["<leader>","c"],
             "commands": ["python.datascience.runcurrentcelladvance"]
@@ -486,7 +490,7 @@
             "commands": ["workbench.view.search"]
         },
         {
-            "before": ["<leader>","t","m"],
+            "before": ["<leader>","t","p"],
             "commands": ["workbench.actions.view.problems"]
         },
         {
@@ -531,6 +535,7 @@
     "vim.enableNeovim": true,
     "vim.neovimPath": "/usr/local/bin/nvim",
     "vim.useCtrlKeys": false,
+    "vim.timeout": 300,
     "vim.handleKeys": {
         "<C-d>": true,
         "<C-f>": true,

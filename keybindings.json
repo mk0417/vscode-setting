@@ -30,6 +30,16 @@
     {
         "key": "ctrl+space",
         "command": "workbench.action.showCommands"
+    },
+    {
+        "key": "ctrl+n",
+        "command": "editor.action.nextMatchFindAction",
+        "when": "editorFocus && findInputFocussed"
+    },
+    {
+        "key": "ctrl+p",
+        "command": "editor.action.previousMatchFindAction",
+        "when": "editorFocus && findInputFocussed"
     }
 ]
 

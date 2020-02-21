@@ -8,7 +8,7 @@
         "command": "workbench.action.closeActiveEditor"
     },
     {
-       "key": "ctrl+d",
+       "key": "ctrl+'",
         "command": "workbench.action.closeGroup"
     },
     {

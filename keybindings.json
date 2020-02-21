@@ -8,6 +8,10 @@
         "command": "workbench.action.closeActiveEditor"
     },
     {
+       "key": "ctrl+d",
+        "command": "workbench.action.closeGroup"
+    },
+    {
         "key": "ctrl+t",
         "command": "workbench.action.toggleSidebarVisibility"
     },

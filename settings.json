@@ -262,6 +262,10 @@
             "commands": ["editor.action.clipboardPasteAction"]
         },
         {
+            "before": ["<leader>","m"],
+            "after": ["%"]
+        },
+        {
             "before": ["g","i"],
             "after": ["g","i","<Esc>"]
         },

@@ -68,7 +68,9 @@
     "python.experiments.enabled": false,
     "python.dataScience.enabled": true,
     "python.dataScience.allowLiveShare": false,
-    "python.languageServer": "Microsoft",
+
+    "r.lsp.diagnostics": false,
+    "r.source.focus": "editor",
 
     "window.titleBarStyle": "custom",
     "window.zoomLevel": 0,
@@ -233,6 +235,10 @@
         {
             "before": ["<leader>","r"],
             "commands": ["python.datascience.execSelectionInteractive"]
+        },
+        {
+            "before": ["<leader>","i"],
+            "commands": ["r.runSelection"]
         }
     ],
 
@@ -290,7 +296,7 @@
             "commands": ["editor.action.commentLine"]
         },
         {
-            "before": ["<leader>","n","n"],
+            "before": ["<leader>","q","n"],
             "commands": ["notifications.clearAll"]
         },
         {
@@ -512,12 +518,8 @@
             "commands": ["workbench.view.extensions"]
         },
         {
-            "before": ["<leader>","q","w"],
-            "after": ["y","s","i","w"]
-        },
-        {
-            "before": ["<leader>","q","q"],
-            "after": ["y","s","i","W"]
+            "before": ["<leader>","q","r"],
+            "commands": ["workbench.action.reloadWindow"]
         },
         {
             "before": ["<leader>","r"],

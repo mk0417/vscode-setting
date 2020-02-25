@@ -193,6 +193,10 @@
         {
             "before": ["b","l"],
             "after": ["~"]
+        },
+        {
+            "before": ["r","r"],
+            "after": ["<","-"]
         }
     ],
 
@@ -454,6 +458,14 @@
             "after": ["leader","leader","leader","b","d","w"]
         },
         {
+            "before": ["leader","j","n"],
+            "commands": ["editor.action.marker.nextInFiles"]
+        },
+        {
+            "before": ["leader","j","p"],
+            "commands": ["editor.action.marker.prevInFiles"]
+        },
+        {
             "before": ["<leader>","e","e"],
             "commands": ["editor.action.smartSelect.grow"]
         },
@@ -543,7 +555,7 @@
     "vim.enableNeovim": true,
     "vim.neovimPath": "/usr/local/bin/nvim",
     "vim.useCtrlKeys": false,
-    "vim.timeout": 300,
+    "vim.timeout": 400,
     "vim.handleKeys": {
         "<C-d>": true,
         "<C-f>": true,

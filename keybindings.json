@@ -44,6 +44,9 @@
         "key": "ctrl+p",
         "command": "editor.action.previousMatchFindAction",
         "when": "editorFocus && findInputFocussed"
+    },
+    {
+        "key": "ctrl+s",
+        "command": "workbench.action.quickOpenTerm"
     }
 ]
-

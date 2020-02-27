@@ -159,11 +159,11 @@
             "after": ["_"]
         },
         {
-            "before": ["g","j"],
+            "before": ["d","y"],
             "after": [">"]
         },
         {
-            "before": ["j","j"],
+            "before": ["x","y"],
             "after": ["<"]
         },
         {
@@ -197,6 +197,14 @@
         {
             "before": ["r","r"],
             "after": ["<","-"]
+        },
+        {
+            "before": ["y","b"],
+            "after": ["£"]
+        },
+        {
+            "before": ["m","y"],
+            "after": ["$"]
         }
     ],
 

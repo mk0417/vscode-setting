@@ -48,5 +48,9 @@
     {
         "key": "ctrl+s",
         "command": "workbench.action.quickOpenTerm"
+    },
+    {
+        "key": "ctrl+,",
+        "command": "workbench.action.terminal.kill"
     }
 ]

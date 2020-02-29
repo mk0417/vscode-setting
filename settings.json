@@ -260,11 +260,7 @@
             "after": ["*"]
         },
         {
-            "before": ["<leader>","c"],
-            "commands": ["python.datascience.runcurrentcelladvance"]
-        },
-        {
-            "before": ["<leader>","d"],
+            "before": ["<leader>","k"],
             "after": ["c","c","<Esc>"]
         },
         {
@@ -310,10 +306,6 @@
         {
             "before": ["<leader>","q","n"],
             "commands": ["notifications.clearAll"]
-        },
-        {
-            "before": ["<leader>","b","t"],
-            "commands": ["workbench.action.openNextRecentlyUsedEditorInGroup"]
         },
         {
             "before": ["<leader>","b","b"],
@@ -542,8 +534,24 @@
             "commands": ["workbench.action.reloadWindow"]
         },
         {
-            "before": ["<leader>","r"],
+            "before": ["<leader>","d","d"],
             "commands": ["python.datascience.execSelectionInteractive"]
+        },
+        {
+            "before": ["<leader>","d","a"],
+            "commands": ["python.datascience.runcurrentcelladvance"]
+        },
+        {
+            "before": ["<leader>","d","c"],
+            "commands": ["python.datascience.removeallcells"]
+        },
+        {
+            "before": ["<leader>","d","i"],
+            "commands": ["python.datascience.interruptkernel"]
+        },
+        {
+            "before": ["<leader>","d","r"],
+            "commands": ["python.datascience.restartkernel"]
         },
         {
             "before": ["<leader>","a","t"],
@@ -563,7 +571,7 @@
     "vim.enableNeovim": true,
     "vim.neovimPath": "/usr/local/bin/nvim",
     "vim.useCtrlKeys": false,
-    "vim.timeout": 400,
+    "vim.timeout": 500,
     "vim.handleKeys": {
         "<C-d>": true,
         "<C-f>": true,

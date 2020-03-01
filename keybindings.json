@@ -20,11 +20,11 @@
         "command": "workbench.action.togglePanel"
     },
     {
-        "key": "ctrl+t ctrl+s",
+        "key": "ctrl+t ctrl+t",
         "command": "workbench.action.toggleSidebarVisibility"
     },
     {
-        "key": "ctrl+t ctrl+t",
+        "key": "ctrl+t ctrl+o",
         "command": "workbench.action.quickOpenTerm"
     },
     {

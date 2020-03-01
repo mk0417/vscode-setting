@@ -245,7 +245,7 @@
             "after": ["toggleFindRegex"]
         },
         {
-            "before": ["<leader>","r"],
+            "before": ["<leader>","d","d"],
             "commands": ["python.datascience.execSelectionInteractive"]
         },
         {

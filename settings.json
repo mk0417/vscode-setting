@@ -348,6 +348,10 @@
             "commands": ["workbench.action.files.openFileFolder"]
         },
         {
+            "before": ["<leader>","f","j"],
+            "commands": ["extension.dired.open"]
+        },
+        {
             "before": ["<leader>","f","m"],
             "commands": ["fileutils.moveFile"]
         },

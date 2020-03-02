@@ -249,7 +249,7 @@
             "commands": ["python.datascience.execSelectionInteractive"]
         },
         {
-            "before": ["<leader>","i"],
+            "before": ["<leader>","r"],
             "commands": ["r.runSelection"]
         }
     ],

@@ -1,6 +1,6 @@
 [
     {
-       "key": "ctrl+c ctrl+d",
+       "key": "ctrl+m",
         "command": "workbench.action.closeActiveEditor"
     },
     {
@@ -52,5 +52,15 @@
         "key": "ctrl+p",
         "command": "editor.action.previousMatchFindAction",
         "when": "editorFocus && findInputFocussed"
+    },
+    {
+        "key": "h",
+        "command": "breadcrumbs.focusPrevious",
+        "when": "breadcrumbsActive && breadcrumbsVisible"
+    },
+    {
+        "key": "l",
+        "command": "breadcrumbs.focusNext",
+        "when": "breadcrumbsActive && breadcrumbsVisible"
     }
 ]

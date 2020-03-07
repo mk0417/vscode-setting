@@ -471,6 +471,11 @@
             "commands": ["editor.action.marker.prevInFiles"]
         },
         {
+            // <space> + e + d: delete the last character of a line
+            "before": ["<leader>","e","d"],
+            "after": ["$","x"]
+        },
+        {
             "before": ["<leader>","e","e"],
             "commands": ["editor.action.smartSelect.grow"]
         },
@@ -543,7 +548,7 @@
             "commands": ["workbench.action.reloadWindow"]
         },
         {
-            "before": ["<leader>","d","d"],
+            "before": ["<leader>","d","s"],
             "commands": ["python.datascience.execSelectionInteractive"]
         },
         {
@@ -565,6 +570,10 @@
         {
             "before": ["<leader>","a","t"],
             "commands": ["workbench.action.terminal.toggleTerminal"]
+        },
+        {
+            "before": ["<leader>","a","b"],
+            "commands": ["breadcrumbs.focusAndSelect"]
         },
         {
             "before": ["<leader>","a","s"],

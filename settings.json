@@ -18,6 +18,7 @@
         "editor.findMatchHighlightBackground": "#fa380888",
         "editor.findRangeHighlightBackground": "#f0f3f23d",
         "editor.rangeHighlightBackground": "#0c89f059",
+        "editor.findMatchBorder": "#00c3ff",
         "editorSuggestWidget.background": "#e9f865",
         "editorSuggestWidget.selectedBackground": "#52e09e52",
         "editorSuggestWidget.highlightForeground": "#e96711",

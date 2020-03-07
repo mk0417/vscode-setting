@@ -349,8 +349,8 @@
             "commands": ["workbench.action.files.openFileFolder"]
         },
         {
-            "before": ["<leader>","f","j"],
-            "commands": ["extension.dired.open"]
+            "before": ["<leader>","f","k"],
+            "commands": ["workbench.action.openGlobalKeybindingsFile"]
         },
         {
             "before": ["<leader>","f","m"],
@@ -521,6 +521,10 @@
         {
             "before": ["<leader>","t","p"],
             "commands": ["workbench.actions.view.problems"]
+        },
+        {
+            "before": ["<leader>","t","q"],
+            "commands": ["workbench.action.quickOpenView"]
         },
         {
             "before": ["<leader>","t","s"],

@@ -196,6 +196,18 @@
             "after": ["~"]
         },
         {
+            "before": ["s","y"],
+            "after": ["\""]
+        },
+        {
+            "before": ["m","h"],
+            "after": [":"]
+        },
+        {
+            "before": ["w","h"],
+            "after": ["?"]
+        },
+        {
             "before": ["r","r"],
             "after": ["<","-"]
         },
@@ -273,15 +285,15 @@
             "after": ["*"]
         },
         {
-            "before": ["<leader>","k","k"],
+            "before": ["s","k"],
             "after": ["d","i","b"]
         },
         {
-            "before": ["<leader>","k","f"],
+            "before": ["s","f"],
             "after": ["d","i","]"]
         },
         {
-            "before": ["<leader>","k","h"],
+            "before": ["s","h"],
             "after": ["d","i","}"]
         },
         {

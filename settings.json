@@ -43,7 +43,6 @@
     "editor.autoIndent": "full",
     "editor.wordWrap": "wordWrapColumn",
     "editor.lineHeight": 21,
-    "editor.rulers": [80],
     "editor.tabCompletion": "on",
     "editor.cursorBlinking": "smooth",
     "editor.smoothScrolling": true,
@@ -69,9 +68,15 @@
     "python.experiments.enabled": false,
     "python.dataScience.enabled": true,
     "python.dataScience.allowLiveShare": false,
+    "[python]": {
+        "editor.rulers": [80]
+    },
 
+    "r.rterm.mac": "/users/ml/anaconda3/bin/radian",
     "r.lsp.diagnostics": false,
     "r.source.focus": "editor",
+    "r.bracketedPaste": true,
+    "r.rterm.option": [],
 
     "window.titleBarStyle": "custom",
     "window.zoomLevel": 0,

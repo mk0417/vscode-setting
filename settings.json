@@ -257,6 +257,10 @@
             "after": ["S","}"]
         },
         {
+            "before": ["i","s"],
+            "after": ["S","\""]
+        },
+        {
             "before": ["<leader>","i"],
             "after": [">"]
         },

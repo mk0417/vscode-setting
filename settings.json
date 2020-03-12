@@ -120,6 +120,9 @@
         "selectionReplace": [
             "editor.action.startFindReplaceAction",
             "toggleFindInSelection"
+        ],
+        "switchKernel": [
+            "python.datascience.switchKernel"
         ]
       },
 
@@ -643,6 +646,10 @@
         {
             "before": ["<leader>","d","a"],
             "commands": ["python.datascience.runcurrentcelladvance"]
+        },
+        {
+            "before": ["<leader>","d","k"],
+            "commands": ["macros.switchKernel"]
         },
         {
             "before": ["<leader>","d","c"],

@@ -1,6 +1,6 @@
 [
     {
-       "key": "ctrl+m",
+       "key": "ctrl+c ctrl+m",
         "command": "workbench.action.closeActiveEditor"
     },
     {
@@ -28,11 +28,11 @@
         "command": "workbench.action.quickOpenTerm"
     },
     {
-        "key": "ctrl+j",
+        "key": "ctrl+j ctrl+f",
         "command": "workbench.action.focusFirstEditorGroup"
     },
     {
-        "key": "ctrl+r",
+        "key": "ctrl+j ctrl+p",
         "command": "workbench.action.quickOpenPreviousRecentlyUsedEditorInGroup"
     },
     {

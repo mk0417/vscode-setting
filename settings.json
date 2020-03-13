@@ -334,6 +334,10 @@
             "after": ["d","i","\""]
         },
         {
+            "before": ["s","u"],
+            "after": ["d","0"]
+        },
+        {
             "before": ["<leader>","i"],
             "after": [">","l"]
         },

@@ -1,10 +1,10 @@
 [
     {
-       "key": "ctrl+c ctrl+m",
+       "key": "ctrl+c ctrl+d",
         "command": "workbench.action.closeActiveEditor"
     },
     {
-       "key": "ctrl+c ctrl+j",
+       "key": "ctrl+c ctrl+g",
         "command": "workbench.action.closeGroup"
     },
     {

@@ -1,27 +1,34 @@
 {
-	"Pandas sort one variable": {
-		"prefix": "so",
-		"body": "$1.sort_values('$2',ignore_index=True)",
-		"description": "pandas dataframe sort based on one variable"
+	"Pandas sort variables": {
+		"prefix": "sor",
+		"body": "$1.sort_values(${2|'',[''\\,''],[''\\,''\\,'']|},ignore_index=True)",
+		"description": "pandas dataframe sort based on variables"
 	},
-	"Pandas sort multiple variables": {
-		"prefix": "st",
-		"body": "$1.sort_values(['$2','$3'],ignore_index=True)",
-		"description": "pandas dataframe sort based on multiple variables"
-	},
-	"Pandas drop duplicates one": {
-		"prefix": "dpo",
-		"body": "$1.drop_duplicates('$2')",
-		"description": "pandas dataframe drop duplicates based on one variable"
-	},
-	"Pandas drop duplicates two": {
-		"prefix": "dpt",
-		"body": "$1.drop_duplicates(['$2','$3'])",
-		"description": "pandas dataframe drop duplicates based on two variables"
+	"Pandas drop duplicates": {
+		"prefix": "dup",
+		"body": "$1.drop_duplicates(${2|'',[''\\,''],[''\\,''\\,'']|})",
+		"description": "pandas dataframe drop duplicates based on variables"
 	},
 	"Pandas group rolling": {
-		"prefix": "gr",
-		"body": "$1.groupby('$2')['$3'].rolling(window=$4,min_periods=$5).${6|mean,sum,std|}().reset_index(drop=True)",
+		"prefix": "grr",
+		"body": [
+			"$1.groupby(${2|'',[''\\,'']|})['$3'] \\",
+			".rolling(window=$4,min_periods=$5).${6|mean,sum,std|}().reset_index(drop=True)",
+		],
 		"description": "pandas dataframe rolling based on group"
+	},
+	"Pandas merge": {
+		"prefix": "mer",
+		"body": "$1.merge($2,how=$3,on=${4|'',[''\\,''],[''\\,''\\,'']|})",
+		"description": "pandas dataframe merge"
+	},
+	"Python multiple comments": {
+		"prefix": "mc",
+		"body": [
+			"#--------------------------------------",
+			"#",
+			"#--------------------------------------",
+		],
+		"description": "Python insert multiple comments"
 	}
 }

@@ -1,7 +1,7 @@
 {
     "workbench.panel.defaultLocation": "right",
     "workbench.settings.editor": "json",
-    "workbench.colorTheme": "Tomorrow Night",
+    "workbench.colorTheme": "Horizon",
     "workbench.iconTheme": "vscode-icons",
     "workbench.statusBar.visible": true,
     "workbench.editor.highlightModifiedTabs": true,
@@ -19,8 +19,8 @@
         "editor.findRangeHighlightBackground": "#f0f3f23d",
         "editor.rangeHighlightBackground": "#0c89f059",
         "editor.findMatchBorder": "#00aeffb0",
-        "editorSuggestWidget.background": "#388bc2",
-        "editorSuggestWidget.selectedBackground": "#52e09e52",
+        "editorSuggestWidget.background": "#f5ec6d",
+        "editorSuggestWidget.selectedBackground": "#ee8aa3a4",
         "editorSuggestWidget.highlightForeground": "#e96711",
         "editorHoverWidget.background": "#325270",
         "editor.selectionBackground": "#b6bebe46",
@@ -234,6 +234,10 @@
         {
             "before": ["m","y"],
             "after": ["$"]
+        },
+        {
+            "before": ["s","j"],
+            "after": ["^"]
         }
     ],
 
@@ -300,11 +304,13 @@
         },
         {
             "before": ["<leader>","d","s"],
-            "commands": ["python.datascience.execSelectionInteractive"]
+            "commands": ["python.datascience.execSelectionInteractive"],
+            "when": "editorTextFocus && editorLangId == 'python'"
         },
         {
-            "before": ["<leader>","r"],
-            "commands": ["r.runSelection"]
+            "before": ["<leader>","d","s"],
+            "commands": ["r.runSelection"],
+            "when": ["editorTextFocus && editorLangId=='r'"]
         }
     ],
 
@@ -649,7 +655,8 @@
         },
         {
             "before": ["<leader>","d","s"],
-            "commands": ["python.datascience.execSelectionInteractive"]
+            "commands": ["python.datascience.execSelectionInteractive"],
+            "when": "editorTextFocus && editorLangId=='python'"
         },
         {
             "before": ["<leader>","d","a"],

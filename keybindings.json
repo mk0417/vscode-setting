@@ -9,7 +9,8 @@
     },
     {
         "key": "ctrl+c ctrl+c",
-        "command": "python.datascience.execSelectionInteractive"
+        "command": "python.datascience.execSelectionInteractive",
+        "when": "editorTextFocus && editorLangId=='python'"
     },
     {
         "key": "ctrl+c ctrl+k",
@@ -49,9 +50,19 @@
         "when": "editorFocus && findInputFocussed"
     },
     {
+        "key": "ctrl+n",
+        "command": "selectNextSuggestion",
+        "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
+    },
+    {
         "key": "ctrl+p",
         "command": "editor.action.previousMatchFindAction",
         "when": "editorFocus && findInputFocussed"
+    },
+    {
+        "key": "ctrl+p",
+        "command": "selectPrevSuggestion",
+        "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
     },
     {
         "key": "h",

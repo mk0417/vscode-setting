@@ -200,7 +200,7 @@
             "after": ["%"]
         },
         {
-            "before": ["d","d"],
+            "before": ["q","a"],
             "after": ["@"]
         },
         {
@@ -220,7 +220,7 @@
             "after": [":"]
         },
         {
-            "before": ["w","h"],
+            "before": ["w","n"],
             "after": ["?"]
         },
         {
@@ -287,10 +287,6 @@
         {
             "before": [ "<leader>","e","s"],
             "commands": ["editor.action.smartSelect.shrink"]
-        },
-        {
-            "before": ["<leader>","e","f"],
-            "commands": ["editor.action.formatDocument"]
         },
         {
             "before": ["<leader>","s","i"],
@@ -590,10 +586,6 @@
         {
             "before": ["<leader>","e","e"],
             "commands": ["editor.action.smartSelect.grow"]
-        },
-        {
-            "before": ["<leader>","e","f"],
-            "commands": ["editor.action.formatDocument"]
         },
         {
             "before": ["<leader>","e","k"],

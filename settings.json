@@ -378,6 +378,10 @@
             "after": ["v","$","h"]
         },
         {
+            "before": ["<leader>","u","k"],
+            "after": ["v","t",")"]
+        },
+        {
             "before": ["<leader>","l","e"],
             "after": ["^","v","$","h"]
         },

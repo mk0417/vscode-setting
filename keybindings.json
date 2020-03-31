@@ -83,5 +83,10 @@
         "key": "down",
         "command": "cursorDown",
         "when": "editorTextFocus && vim.active && !inDebugRepl && vim.mode == 'Normal' && !suggestWidgetMultipleSuggestions && !suggestWidgetVisible"
+    },
+    {
+        "key": "ctrl+,",
+        "command": "toggleSuggestionDetails",
+        "when": "suggestWidgetVisible && textInputFocus"
     }
 ]

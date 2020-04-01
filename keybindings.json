@@ -85,7 +85,7 @@
         "when": "editorTextFocus && vim.active && !inDebugRepl && vim.mode == 'Normal' && !suggestWidgetMultipleSuggestions && !suggestWidgetVisible"
     },
     {
-        "key": "ctrl+,",
+        "key": "ctrl+.",
         "command": "toggleSuggestionDetails",
         "when": "suggestWidgetVisible && textInputFocus"
     }

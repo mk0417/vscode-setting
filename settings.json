@@ -700,10 +700,6 @@
             "commands": ["breadcrumbs.focusAndSelect"]
         },
         {
-            "before": ["<leader>","a","s"],
-            "commands": ["editor.action.triggerSuggest"]
-        },
-        {
             "before": ["<leader>","a","k"],
             "commands": ["workbench.action.toggleScreencastMode"]
         }

@@ -2,7 +2,6 @@
     "workbench.panel.defaultLocation": "right",
     "workbench.settings.editor": "json",
     "workbench.colorTheme": "Horizon",
-    "workbench.iconTheme": "vscode-icons",
     "workbench.statusBar.visible": true,
     "workbench.editor.highlightModifiedTabs": true,
     "workbench.activityBar.visible": false,
@@ -20,8 +19,8 @@
         "editor.rangeHighlightBackground": "#0c89f059",
         "editor.findMatchBorder": "#00aeffb0",
         "editorSuggestWidget.background": "#f5ec6d",
-        "editorSuggestWidget.selectedBackground": "#ee8aa3a4",
-        "editorSuggestWidget.highlightForeground": "#e96711",
+        "editorSuggestWidget.selectedBackground": "#579fdaf3",
+        "editorSuggestWidget.highlightForeground": "#e94311c2",
         "editorHoverWidget.background": "#325270",
         "editor.selectionBackground": "#b6bebe46",
         "editor.wordHighlightBackground": "#7d8535",
@@ -29,7 +28,6 @@
         "editorGutter.addedBackground": "#1fa56d",
         "editorGutter.deletedBackground": "#c53e26"
       },
-
     "editor.fontFamily": "JetBrains Mono",
     "editor.fontSize": 12,
     "editor.fontWeight": "400",
@@ -56,12 +54,9 @@
         "comments": false,
         "strings": true
     },
-
-    "diffEditor.renderSideBySide": true,
-
+    "diffEditor.renderSideBySide": false,
     "files.autoSave": "off",
     "files.trimTrailingWhitespace": true,
-
     "python.pythonPath": "/Users/ml/anaconda3/bin/python",
     "python.dataScience.jupyterServerURI": "local",
     "python.linting.enabled": false,
@@ -76,37 +71,30 @@
     "[python]": {
         "editor.rulers": [80]
     },
-
     "r.rterm.mac": "/users/ml/anaconda3/bin/radian",
     "r.lsp.diagnostics": false,
     "r.source.focus": "editor",
     "r.bracketedPaste": true,
     "r.rterm.option": [],
-
     "window.titleBarStyle": "custom",
     "window.zoomLevel": 0,
-
+    "window.nativeTabs": false,
     "search.showLineNumbers": true,
     "search.followSymlinks": false,
-
     "terminal.integrated.inheritEnv": true,
     "terminal.integrated.cursorBlinking": true,
     "terminal.integrated.fontWeightBold": "normal",
     "terminal.integrated.fontFamily": "Menlo",
     "terminal.integrated.fontSize": 12,
-
     "latex-workshop.view.pdf.viewer": "tab",
-
     "git.ignoreLegacyWarning": true,
     "gitlens.hovers.currentLine.over": "line",
     "gitlens.currentLine.enabled": false,
     "gitlens.codeLens.enabled": false,
     "gitlens.statusBar.format": "${ago}",
     "gitlens.currentLine.format": "${ago}··${message}",
-
     "extensions.ignoreRecommendations": true,
     "extensions.showRecommendationsOnlyOnDemand": true,
-
     "macros": {
         "splitEmpty": [
             "workbench.action.splitEditor",
@@ -125,7 +113,6 @@
             "python.datascience.switchKernel"
         ]
       },
-
     "vim.insertModeKeyBindings": [
         {
             "before": ["f","d"],
@@ -240,9 +227,7 @@
             "after": ["^"]
         }
     ],
-
     "vim.leader": "<space>",
-
     "vim.visualModeKeyBindingsNonRecursive": [
         {
             "before": ["f","d"],
@@ -277,11 +262,11 @@
             "commands": ["workbench.action.showCommands"]
         },
         {
-            "before": ["<leader>","c","l"],
+            "before": ["<leader>","o","c"],
             "commands": ["editor.action.commentLine"]
         },
         {
-            "before": ["<leader>","e","e"],
+            "before": ["<leader>","e","g"],
             "commands": ["editor.action.smartSelect.grow"]
         },
         {
@@ -307,11 +292,22 @@
             "commands": ["r.runSelection"]
         }
     ],
-
     "vim.normalModeKeyBindingsNonRecursive": [
         {
             "before": ["m","m"],
             "after": ["*"]
+        },
+        {
+            "before": ["Y"],
+            "after": ["y","$"]
+        },
+        {
+            "before": ["<leader>","o","a"],
+            "after": ["g","g","v","G"]
+        },
+        {
+            "before": ["<leader>","o","c"],
+            "commands": ["editor.action.commentLine"]
         },
         {
             "before": ["<leader>","k","k"],
@@ -382,20 +378,12 @@
             "after": ["v","t",")"]
         },
         {
-            "before": ["<leader>","l","e"],
-            "after": ["^","v","$","h"]
+            "before": ["<leader>","u","s"],
+            "after": ["v","t","\""]
         },
         {
             "before": ["<leader>","<space>"],
             "commands": ["workbench.action.showCommands"]
-        },
-        {
-            "before": ["<leader>","c","l"],
-            "commands": ["editor.action.commentLine"]
-        },
-        {
-            "before": ["<leader>","q","n"],
-            "commands": ["notifications.clearAll"]
         },
         {
             "before": ["<leader>","b","b"],
@@ -588,12 +576,16 @@
             "after": ["$","x","^"]
         },
         {
-            "before": ["<leader>","e","e"],
+            "before": ["<leader>","e","g"],
             "commands": ["editor.action.smartSelect.grow"]
         },
         {
             "before": ["<leader>","e","k"],
             "after": ["c","c","<Esc>"]
+        },
+        {
+            "before": ["<leader>","e","e"],
+            "after": ["^","v","$","h"]
         },
         {
             "before": ["<leader>","e","o"],
@@ -668,6 +660,14 @@
             "commands": ["workbench.action.reloadWindow"]
         },
         {
+            "before": ["<leader>","q","n"],
+            "commands": ["notifications.clearAll"]
+        },
+        {
+            "before": ["<leader>","q","h"],
+            "commands": [":nohl"]
+        },
+        {
             "before": ["<leader>","d","s"],
             "commands": ["python.datascience.execSelectionInteractive"]
         },
@@ -685,7 +685,7 @@
         },
         {
             "before": ["<leader>","d","i"],
-            "commands": ["python.datascience.interruptkernel"]
+             "commands": ["python.datascience.interruptkernel"]
         },
         {
             "before": ["<leader>","d","r"],
@@ -700,11 +700,14 @@
             "commands": ["breadcrumbs.focusAndSelect"]
         },
         {
+            "before": ["<leader>","a","s"],
+            "commands": ["editor.action.triggerSuggest"]
+        },
+        {
             "before": ["<leader>","a","k"],
             "commands": ["workbench.action.toggleScreencastMode"]
         }
     ],
-
     "vim.easymotion": true,
     "vim.easymotionMarkerHeight": 18,
     "vim.visualstar": true,
@@ -716,6 +719,7 @@
     "vim.useCtrlKeys": false,
     "vim.timeout": 400,
     "vim.foldfix": true,
+    "vim.hlsearch": true,
     "vim.handleKeys": {
         "<C-d>": true,
         "<C-f>": true,
@@ -724,7 +728,6 @@
         "<C-b>": true,
         "<C-r>": true
     },
-
     "telemetry.enableCrashReporter": false,
     "telemetry.enableTelemetry": false
 }

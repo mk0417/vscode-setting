@@ -71,11 +71,22 @@
     "[python]": {
         "editor.rulers": [80]
     },
+    "[markdown]":  {
+        "editor.quickSuggestions": true
+    },
     "r.rterm.mac": "/users/ml/anaconda3/bin/radian",
     "r.lsp.diagnostics": false,
     "r.source.focus": "editor",
     "r.bracketedPaste": true,
     "r.rterm.option": [],
+    "cSpell.showStatus": false,
+    "cSpell.enableFiletypes": [
+        "!json",
+        "!jsonc",
+        "!R",
+        "!text",
+        "!python"
+    ],
     "window.titleBarStyle": "custom",
     "window.zoomLevel": 0,
     "window.nativeTabs": false,
@@ -576,6 +587,10 @@
             "after": ["$","x","^"]
         },
         {
+            "before": ["<leader>","e","f"],
+            "commands": ["editor.action.formatDocument"]
+        },
+        {
             "before": ["<leader>","e","g"],
             "commands": ["editor.action.smartSelect.grow"]
         },
@@ -700,12 +715,20 @@
             "commands": ["breadcrumbs.focusAndSelect"]
         },
         {
-            "before": ["<leader>","a","s"],
-            "commands": ["editor.action.triggerSuggest"]
-        },
-        {
             "before": ["<leader>","a","k"],
             "commands": ["workbench.action.toggleScreencastMode"]
+        },
+        {
+            "before": ["<leader>","a","s"],
+            "commands": ["markdown.showPreviewToSide"]
+        },
+        {
+            "before": ["<leader>","a","h"],
+            "commands": ["extension.markdown-pdf.html"]
+        },
+        {
+            "before": ["<leader>","a","p"],
+            "commands": ["extension.markdown-pdf.pdf"]
         }
     ],
     "vim.easymotion": true,
@@ -717,7 +740,7 @@
     "vim.enableNeovim": true,
     "vim.neovimPath": "/usr/local/bin/nvim",
     "vim.useCtrlKeys": false,
-    "vim.timeout": 400,
+    "vim.timeout": 500,
     "vim.foldfix": true,
     "vim.hlsearch": true,
     "vim.handleKeys": {

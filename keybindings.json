@@ -8,6 +8,10 @@
         "command": "workbench.action.closeGroup"
     },
     {
+       "key": "ctrl+c ctrl+j",
+        "command": "workbench.action.closeWindow"
+    },
+    {
         "key": "ctrl+c ctrl+c",
         "command": "python.datascience.execSelectionInteractive",
         "when": "editorTextFocus && editorLangId=='python'"
@@ -35,6 +39,10 @@
     {
         "key": "ctrl+j ctrl+p",
         "command": "workbench.action.quickOpenPreviousRecentlyUsedEditorInGroup"
+    },
+    {
+        "key": "ctrl+j ctrl+j",
+        "command": "workbench.action.newWindow"
     },
     {
         "key": "ctrl+;",

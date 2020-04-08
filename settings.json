@@ -1,7 +1,8 @@
 {
     "workbench.panel.defaultLocation": "right",
     "workbench.settings.editor": "json",
-    "workbench.colorTheme": "Remedy - Dark (Straight)",
+    "workbench.colorTheme": "Horizon",
+    "workbench.iconTheme": "vscode-icons",
     "workbench.statusBar.visible": true,
     "workbench.editor.highlightModifiedTabs": true,
     "workbench.activityBar.visible": false,
@@ -18,7 +19,7 @@
         "editor.findRangeHighlightBackground": "#f0f3f23d",
         "editor.rangeHighlightBackground": "#0c89f059",
         "editor.findMatchBorder": "#00aeffb0",
-        "editorSuggestWidget.background": "#2c7baf",
+        "editorSuggestWidget.background": "#f7f09a",
         "editorSuggestWidget.selectedBackground": "#579fdaf3",
         "editorSuggestWidget.highlightForeground": "#e94311c2",
         "editorHoverWidget.background": "#325270",
@@ -30,7 +31,7 @@
       },
     "editor.fontFamily": "JetBrains Mono",
     "editor.fontSize": 12,
-    "editor.fontWeight": "500",
+    "editor.fontWeight": "400",
     "editor.lineNumbers": "relative",
     "editor.minimap.enabled": false,
     "editor.suggestSelection": "first",
@@ -55,6 +56,17 @@
         "strings": true
     },
     "diffEditor.renderSideBySide": false,
+    "editor.tokenColorCustomizations": {
+        "textMateRules": [
+            {
+                "scope": ["punctuation.definition.comment",
+                          "comment"],
+                "settings": {
+                    "foreground": "#878a8dd0"
+                }
+            }
+        ]
+    },
     "files.autoSave": "off",
     "files.trimTrailingWhitespace": true,
     "python.pythonPath": "/Users/ml/anaconda3/bin/python",

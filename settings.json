@@ -62,7 +62,7 @@
                 "scope": ["punctuation.definition.comment",
                           "comment"],
                 "settings": {
-                    "foreground": "#878a8dd0"
+                    "foreground": "#878a8d94"
                 }
             }
         ]
@@ -399,6 +399,14 @@
         {
             "before": ["<leader>","u","k"],
             "after": ["v","t",")"]
+        },
+        {
+            "before": ["<leader>","u","f"],
+            "after": ["v","t","]"]
+        },
+        {
+            "before": ["<leader>","u","h"],
+            "after": ["v","t","}"]
         },
         {
             "before": ["<leader>","u","s"],
@@ -761,7 +769,8 @@
         "<C-u>": true,
         "<C-v>": true,
         "<C-b>": true,
-        "<C-r>": true
+        "<C-r>": true,
+        "<C-o>": true
     },
     "telemetry.enableCrashReporter": false,
     "telemetry.enableTelemetry": false

@@ -20,7 +20,7 @@
         "editor.rangeHighlightBackground": "#0c89f059",
         "editor.findMatchBorder": "#00aeffb0",
         "editorSuggestWidget.background": "#f7f09a",
-        "editorSuggestWidget.selectedBackground": "#125588",
+        "editorSuggestWidget.selectedBackground": "#1255887e",
         "editorSuggestWidget.highlightForeground": "#e94311c2",
         "editorHoverWidget.background": "#325270",
         "editor.selectionBackground": "#b6bebe46",
@@ -86,7 +86,8 @@
         "editor.rulers": [80]
     },
     "[markdown]":  {
-        "editor.quickSuggestions": true
+        "editor.quickSuggestions": true,
+        "editor.tabSize": 2
     },
     "r.rterm.mac": "/users/ml/anaconda3/bin/radian",
     "r.lsp.diagnostics": false,

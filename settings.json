@@ -89,6 +89,7 @@
         "editor.quickSuggestions": true,
         "editor.tabSize": 2
     },
+    "todo-tree.tree.showScanModeButton": false,
     "r.rterm.mac": "/users/ml/anaconda3/bin/radian",
     "r.lsp.diagnostics": false,
     "r.source.focus": "editor",
@@ -205,7 +206,7 @@
             "after": ["#"]
         },
         {
-            "before": ["g","t"],
+            "before": ["g","a","n"],
             "after": ["!"]
         },
         {
@@ -221,7 +222,7 @@
             "after": ["|"]
         },
         {
-            "before": ["b","w"],
+            "before": ["b","o","w"],
             "after": ["~"]
         },
         {

@@ -1,7 +1,7 @@
 {
     "workbench.panel.defaultLocation": "right",
     "workbench.settings.editor": "json",
-    "workbench.colorTheme": "One Dark Pro",
+    "workbench.colorTheme": "Eva Dark",
     "workbench.iconTheme": "vscode-icons",
     "workbench.statusBar.visible": true,
     "workbench.editor.highlightModifiedTabs": true,
@@ -20,7 +20,7 @@
         "editor.rangeHighlightBackground": "#0c89f059",
         "editor.findMatchBorder": "#00aeffb0",
         "editorSuggestWidget.background": "#f7f09a",
-        "editorSuggestWidget.selectedBackground": "#a3cbeb7e",
+        "editorSuggestWidget.selectedBackground": "#66ade7",
         "editorSuggestWidget.highlightForeground": "#e94311c2",
         "editorHoverWidget.background": "#325270",
         "editor.selectionBackground": "#b6bebe46",
@@ -58,15 +58,17 @@
     },
     "diffEditor.renderSideBySide": false,
     "editor.tokenColorCustomizations": {
-        "textMateRules": [
-            {
-                "scope": ["punctuation.definition.comment",
-                          "comment"],
-                "settings": {
-                    "foreground": "#878a8d94"
+        "[Horizon]": {
+            "textMateRules": [
+                {
+                    "scope": ["punctuation.definition.comment",
+                            "comment"],
+                    "settings": {
+                        "foreground": "#878a8d94"
+                    }
                 }
-            }
-        ]
+            ]
+        }
     },
     "files.autoSave": "off",
     "files.trimTrailingWhitespace": true,
@@ -92,8 +94,8 @@
     "todo-tree.regex.regex": "((
     "todo-tree.general.tags": [
         "todo",
+        "attention",
         "fixme",
-        "processing",
         "done",
         "note"
     ],
@@ -102,11 +104,11 @@
             "background": "#ffa500",
             "foreground": "#fafafa"
         },
-        "fixme": {
+        "attention": {
             "background": "#e55066",
             "foreground": "#fafafa"
         },
-        "processing": {
+        "fixme": {
             "background": "#5dace0",
             "foreground": "#fafafa"
         },
@@ -115,7 +117,7 @@
             "foreground": "#fafafa"
         },
         "note": {
-            "background": "#fff68f",
+            "background": "#eedd82",
             "foreground": "#333333"
         }
     },
@@ -133,6 +135,11 @@
         "!python"
     ],
     "vsicons.dontShowNewVersionMessage": true,
+    "resmon.show.battery": false,
+    "resmon.show.cpufreq": false,
+    "resmon.show.cputemp": false,
+    "resmon.show.disk": false,
+    "resmon.updatefrequencyms": 10000,
     "window.titleBarStyle": "custom",
     "window.zoomLevel": 0,
     "window.nativeTabs": false,
@@ -543,12 +550,16 @@
             "commands": ["gitlens.toggleFileBlame"]
         },
         {
-            "before": ["<leader>","g","l"],
+            "before": ["<leader>","g","r"],
             "commands": ["gitlens.toggleLineBlame"]
         },
         {
             "before": ["<leader>","g","i"],
             "commands": ["toggle.diff.renderSideBySide"]
+        },
+        {
+            "before": ["<leader>","g","l"],
+            "commands": ["git.viewHistory"]
         },
         {
             "before": ["<leader>","1"],
@@ -798,7 +809,7 @@
     "vim.enableNeovim": true,
     "vim.neovimPath": "/usr/local/bin/nvim",
     "vim.useCtrlKeys": false,
-    "vim.timeout": 500,
+    "vim.timeout": 1000,
     "vim.foldfix": true,
     "vim.hlsearch": true,
     "vim.handleKeys": {

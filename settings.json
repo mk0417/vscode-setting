@@ -1,7 +1,7 @@
 {
     "workbench.panel.defaultLocation": "right",
     "workbench.settings.editor": "json",
-    "workbench.colorTheme": "Horizon",
+    "workbench.colorTheme": "One Dark Pro",
     "workbench.iconTheme": "vscode-icons",
     "workbench.statusBar.visible": true,
     "workbench.editor.highlightModifiedTabs": true,
@@ -20,15 +20,14 @@
         "editor.rangeHighlightBackground": "#0c89f059",
         "editor.findMatchBorder": "#00aeffb0",
         "editorSuggestWidget.background": "#f7f09a",
-        "editorSuggestWidget.selectedBackground": "#1255887e",
+        "editorSuggestWidget.selectedBackground": "#a3cbeb7e",
         "editorSuggestWidget.highlightForeground": "#e94311c2",
         "editorHoverWidget.background": "#325270",
         "editor.selectionBackground": "#b6bebe46",
         "editor.wordHighlightBackground": "#7d8535",
         "editorGutter.modifiedBackground": "#2686c5",
         "editorGutter.addedBackground": "#1fa56d",
-        "editorGutter.deletedBackground": "#c53e26",
-        "contrastActiveBorder": "#CF5A65"
+        "editorGutter.deletedBackground": "#c53e26"
       },
     "editor.fontFamily": "JetBrains Mono",
     "editor.fontSize": 12,
@@ -40,8 +39,8 @@
     "editor.highlightActiveIndentGuide": true,
     "editor.occurrencesHighlight": false,
     "editor.renderLineHighlight": "all",
-    "editor.renderIndentGuides": true,
-    "editor.renderWhitespace": "selection",
+    "editor.renderIndentGuides": false,
+    "editor.renderWhitespace": "none",
     "editor.autoIndent":"full",
     "editor.wordWrap": "bounded",
     "editor.wordWrapColumn": 120,
@@ -90,6 +89,36 @@
         "editor.tabSize": 2
     },
     "todo-tree.tree.showScanModeButton": false,
+    "todo-tree.regex.regex": "((
+    "todo-tree.general.tags": [
+        "todo",
+        "fixme",
+        "processing",
+        "done",
+        "note"
+    ],
+    "todo-tree.highlights.customHighlight": {
+        "todo": {
+            "background": "#ffa500",
+            "foreground": "#fafafa"
+        },
+        "fixme": {
+            "background": "#e55066",
+            "foreground": "#fafafa"
+        },
+        "processing": {
+            "background": "#5dace0",
+            "foreground": "#fafafa"
+        },
+        "done": {
+            "background": "#5ac18e",
+            "foreground": "#fafafa"
+        },
+        "note": {
+            "background": "#fff68f",
+            "foreground": "#333333"
+        }
+    },
     "r.rterm.mac": "/users/ml/anaconda3/bin/radian",
     "r.lsp.diagnostics": false,
     "r.source.focus": "editor",
@@ -103,6 +132,7 @@
         "!text",
         "!python"
     ],
+    "vsicons.dontShowNewVersionMessage": true,
     "window.titleBarStyle": "custom",
     "window.zoomLevel": 0,
     "window.nativeTabs": false,

@@ -91,7 +91,7 @@
         "editor.tabSize": 2
     },
     "todo-tree.tree.showScanModeButton": false,
-    "todo-tree.regex.regex": "((
+    "todo-tree.regex.regex": "((//|#|<!--|;|/\\*|^)\\s*($TAGS):|^\\s*- \\[ \\])",
     "todo-tree.general.tags": [
         "todo",
         "attention",
@@ -312,6 +312,10 @@
         {
             "before": ["i","s"],
             "after": ["S","\""]
+        },
+        {
+            "before": ["i","d"],
+            "after": ["S","'"]
         },
         {
             "before": ["<leader>","i"],

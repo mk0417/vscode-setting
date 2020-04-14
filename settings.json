@@ -1,7 +1,7 @@
 {
     "workbench.panel.defaultLocation": "right",
     "workbench.settings.editor": "json",
-    "workbench.colorTheme": "Eva Dark",
+    "workbench.colorTheme": "Horizon",
     "workbench.iconTheme": "vscode-icons",
     "workbench.statusBar.visible": true,
     "workbench.editor.highlightModifiedTabs": true,
@@ -27,7 +27,8 @@
         "editor.wordHighlightBackground": "#7d8535",
         "editorGutter.modifiedBackground": "#2686c5",
         "editorGutter.addedBackground": "#1fa56d",
-        "editorGutter.deletedBackground": "#c53e26"
+        "editorGutter.deletedBackground": "#c53e26",
+        "terminalCursor.foreground": "#CF5A65"
       },
     "editor.fontFamily": "JetBrains Mono",
     "editor.fontSize": 12,
@@ -554,16 +555,12 @@
             "commands": ["gitlens.toggleFileBlame"]
         },
         {
-            "before": ["<leader>","g","r"],
+            "before": ["<leader>","g","l"],
             "commands": ["gitlens.toggleLineBlame"]
         },
         {
             "before": ["<leader>","g","i"],
             "commands": ["toggle.diff.renderSideBySide"]
-        },
-        {
-            "before": ["<leader>","g","l"],
-            "commands": ["git.viewHistory"]
         },
         {
             "before": ["<leader>","1"],
@@ -813,7 +810,7 @@
     "vim.enableNeovim": true,
     "vim.neovimPath": "/usr/local/bin/nvim",
     "vim.useCtrlKeys": false,
-    "vim.timeout": 1000,
+    "vim.timeout": 500,
     "vim.foldfix": true,
     "vim.hlsearch": true,
     "vim.handleKeys": {

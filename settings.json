@@ -136,11 +136,6 @@
         "!python"
     ],
     "vsicons.dontShowNewVersionMessage": true,
-    "resmon.show.battery": false,
-    "resmon.show.cpufreq": false,
-    "resmon.show.cputemp": false,
-    "resmon.show.disk": false,
-    "resmon.updatefrequencyms": 10000,
     "window.titleBarStyle": "custom",
     "window.zoomLevel": 0,
     "window.nativeTabs": false,

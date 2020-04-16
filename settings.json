@@ -1,7 +1,7 @@
 {
     "workbench.panel.defaultLocation": "right",
     "workbench.settings.editor": "json",
-    "workbench.colorTheme": "Horizon",
+    "workbench.colorTheme": "One Dark Pro",
     "workbench.iconTheme": "vscode-icons",
     "workbench.statusBar.visible": true,
     "workbench.editor.highlightModifiedTabs": true,
@@ -19,16 +19,21 @@
         "editor.findRangeHighlightBackground": "#f0f3f23d",
         "editor.rangeHighlightBackground": "#0c89f059",
         "editor.findMatchBorder": "#00aeffb0",
-        "editorSuggestWidget.background": "#f7f09a",
-        "editorSuggestWidget.selectedBackground": "#66ade7",
-        "editorSuggestWidget.highlightForeground": "#e94311c2",
+        "editorSuggestWidget.background": "#33648b",
+        "editorSuggestWidget.selectedBackground": "#66ade785",
+        "editorSuggestWidget.highlightForeground": "#e96958",
         "editorHoverWidget.background": "#325270",
         "editor.selectionBackground": "#b6bebe46",
         "editor.wordHighlightBackground": "#7d8535",
         "editorGutter.modifiedBackground": "#2686c5",
         "editorGutter.addedBackground": "#1fa56d",
         "editorGutter.deletedBackground": "#c53e26",
-        "terminalCursor.foreground": "#CF5A65"
+        "terminalCursor.foreground": "#CF5A65",
+        "[Horizon]": {
+            "editorSuggestWidget.background": "#f7f09a",
+            "editorSuggestWidget.highlightForeground": "#e94311c2",
+            "editorSuggestWidget.selectedBackground": "#66ade7",
+            "contrastActiveBorder": "#CF5A65"}
       },
     "editor.fontFamily": "JetBrains Mono",
     "editor.fontSize": 12,
@@ -45,7 +50,7 @@
     "editor.autoIndent":"full",
     "editor.wordWrap": "bounded",
     "editor.wordWrapColumn": 120,
-    "editor.lineHeight": 19,
+    "editor.lineHeight": 18,
     "editor.tabCompletion": "on",
     "editor.cursorBlinking": "smooth",
     "editor.smoothScrolling": true,
@@ -87,6 +92,8 @@
     "[python]": {
         "editor.rulers": [80]
     },
+    //"[python]": {}
+    //"[jupyter]": {}
     "[markdown]":  {
         "editor.quickSuggestions": true,
         "editor.tabSize": 2
@@ -688,11 +695,11 @@
             "commands": ["workbench.action.toggleActivityBarVisibility"]
         },
         {
-            "before": ["<leader>","t","b"],
+            "before": ["<leader>","t","j"],
             "commands": ["workbench.action.positionPanelBottom"]
         },
         {
-            "before": ["<leader>","t","r"],
+            "before": ["<leader>","t","l"],
             "commands": ["workbench.action.positionPanelRight"]
         },
         {
@@ -718,6 +725,10 @@
         {
             "before": ["<leader>","t","q"],
             "commands": ["workbench.action.quickOpenView"]
+        },
+        {
+            "before": ["<leader>","t","r"],
+            "commands": ["references-view.find"]
         },
         {
             "before": ["<leader>","t","s"],

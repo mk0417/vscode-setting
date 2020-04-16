@@ -45,6 +45,22 @@
         "command": "workbench.action.newWindow"
     },
     {
+        "key": "ctrl+w ctrl+k",
+        "command": "workbench.action.moveActiveEditorGroupUp"
+    },
+    {
+        "key": "ctrl+w ctrl+j",
+        "command": "workbench.action.moveActiveEditorGroupDown"
+    },
+    {
+        "key": "ctrl+w ctrl+h",
+        "command": "workbench.action.moveActiveEditorGroupLeft"
+    },
+    {
+        "key": "ctrl+w ctrl+l",
+        "command": "workbench.action.moveActiveEditorGroupRight"
+    },
+    {
         "key": "ctrl+;",
         "command": "editor.action.replaceAll"
     },
@@ -96,5 +112,10 @@
         "key": "ctrl+.",
         "command": "toggleSuggestionDetails",
         "when": "suggestWidgetVisible && textInputFocus"
+    },
+    {
+        "key": "ctrl+,",
+        "command": "editor.action.triggerSuggest",
+        "when": "editorHasCompletionItemProvider && textInputFocus && !editorReadonly"
     }
 ]

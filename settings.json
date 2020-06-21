@@ -801,10 +801,6 @@
         {
             "before": ["<leader>","a","p"],
             "commands": ["extension.markdown-pdf.pdf"]
-        },
-        {
-            "before": ["<leader>","a","w"],
-            "commands": ["codetime.codeTimeMetrics"]
         }
     ],
     "vim.easymotion": true,

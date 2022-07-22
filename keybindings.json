@@ -1,121 +1,15 @@
+// Place your key bindings in this file to override the defaultsauto[]
 [
     {
-       "key": "ctrl+c ctrl+d",
-        "command": "workbench.action.closeActiveEditor"
+    "key": "ctrl+,",
+    "command": "workbench.action.showCommands"
     },
     {
-       "key": "ctrl+c ctrl+g",
-        "command": "workbench.action.closeGroup"
+    "key": "ctrl+h",
+    "command": "workbench.action.focusLeftGroup"
     },
     {
-       "key": "ctrl+c ctrl+j",
-        "command": "workbench.action.closeWindow"
-    },
-    {
-        "key": "ctrl+c ctrl+c",
-        "command": "python.datascience.execSelectionInteractive",
-        "when": "editorTextFocus && editorLangId=='python'"
-    },
-    {
-        "key": "ctrl+c ctrl+k",
-        "command": "workbench.action.terminal.kill"
-    },
-    {
-        "key": "ctrl+t ctrl+p",
-        "command": "workbench.action.togglePanel"
-    },
-    {
-        "key": "ctrl+t ctrl+t",
-        "command": "workbench.action.toggleSidebarVisibility"
-    },
-    {
-        "key": "ctrl+t ctrl+o",
-        "command": "workbench.action.quickOpenTerm"
-    },
-    {
-        "key": "ctrl+j ctrl+f",
-        "command": "workbench.action.focusFirstEditorGroup"
-    },
-    {
-        "key": "ctrl+j ctrl+p",
-        "command": "workbench.action.quickOpenPreviousRecentlyUsedEditorInGroup"
-    },
-    {
-        "key": "ctrl+j ctrl+j",
-        "command": "workbench.action.newWindow"
-    },
-    {
-        "key": "ctrl+w ctrl+k",
-        "command": "workbench.action.moveActiveEditorGroupUp"
-    },
-    {
-        "key": "ctrl+w ctrl+j",
-        "command": "workbench.action.moveActiveEditorGroupDown"
-    },
-    {
-        "key": "ctrl+w ctrl+h",
-        "command": "workbench.action.moveActiveEditorGroupLeft"
-    },
-    {
-        "key": "ctrl+w ctrl+l",
-        "command": "workbench.action.moveActiveEditorGroupRight"
-    },
-    {
-        "key": "ctrl+;",
-        "command": "editor.action.replaceAll"
-    },
-    {
-        "key": "ctrl+space",
-        "command": "workbench.action.showCommands"
-    },
-    {
-        "key": "ctrl+n",
-        "command": "editor.action.nextMatchFindAction",
-        "when": "editorFocus && findInputFocussed"
-    },
-    {
-        "key": "ctrl+n",
-        "command": "selectNextSuggestion",
-        "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
-    },
-    {
-        "key": "ctrl+p",
-        "command": "editor.action.previousMatchFindAction",
-        "when": "editorFocus && findInputFocussed"
-    },
-    {
-        "key": "ctrl+p",
-        "command": "selectPrevSuggestion",
-        "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
-    },
-    {
-        "key": "h",
-        "command": "breadcrumbs.focusPrevious",
-        "when": "breadcrumbsActive && breadcrumbsVisible"
-    },
-    {
-        "key": "l",
-        "command": "breadcrumbs.focusNext",
-        "when": "breadcrumbsActive && breadcrumbsVisible"
-    },
-    {
-        "key": "up",
-        "command": "cursorUp",
-        "when": "editorTextFocus && vim.active && !inDebugRepl && vim.mode == 'Normal' && !suggestWidgetMultipleSuggestions && !suggestWidgetVisible"
-    },
-    {
-        "key": "down",
-        "command": "cursorDown",
-        "when": "editorTextFocus && vim.active && !inDebugRepl && vim.mode == 'Normal' && !suggestWidgetMultipleSuggestions && !suggestWidgetVisible"
-    },
-    {
-        "key": "ctrl+.",
-        "command": "toggleSuggestionDetails",
-        "when": "suggestWidgetVisible && textInputFocus"
-    },
-    {
-        "key": "ctrl+,",
-        "command": "editor.action.triggerSuggest",
-        "when": "editorHasCompletionItemProvider && textInputFocus && !editorReadonly"
+    "key": "ctrl+l",
+    "command": "workbench.action.focusRightGroup"
     }
 ]
